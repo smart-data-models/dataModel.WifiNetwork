@@ -1,11 +1,12 @@
 Entidad: WifiPointOfInterest  
 ============================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/WifiPointOfInterest/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Esta entidad describe un punto de interés que tiene una red inalámbrica**  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `category`: Categoría de este punto de interés. Valores permitidos: Los definidos por la [Taxonomía factual](https://github.com/Factual/places/blob/master/categories/factual_taxonomy.json) junto con otras categorías que el usuario del modelo de datos pueda implementar.  - `clientsConnected`: Número de clientes o usuarios conectados en este punto de interés.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `email`: Dirección de correo electrónico del propietario.  - `id`: Identificador único de la entidad  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `service`: Este atributo se utiliza para asignar el punto de acceso a uno o varios departamentos de servicios municipales que reciben el servicio inalámbrico. Por ejemplo: Biblioteca, Museos, Servicios Sociales, Deportes...  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `timeInstant`: [Timestamp](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant) guardado por el Agente IoT de FIWARE. Nota: Este atributo no ha sido armonizado para mantener la compatibilidad con las implementaciones de referencia actuales de FIWARE. Puede haber entornos de producción donde el tipo de atributo sea igual a la cadena 'ISO8601'. Si es así, debe considerarse como un sinónimo de 'DateTime'.  - `type`: Tipo de entidad NGSI. Tiene que ser WifiPointOfInterest  - `wifiStatus`: Indica si hay una red inalámbrica disponible en esta ubicación y el servicio que presta. Los valores permitidos son: 'noService' cuando el punto de interés no tiene puntos de acceso instalados, 'working' cuando el punto de interés tiene puntos de acceso instalados y todos ellos están funcionando (up), 'totalFailure' cuando el punto de interés tiene puntos de acceso instalados y todos ellos no están funcionando (down), y 'workingPartially' cuando el punto de interés tiene puntos de acceso instalados y algunos de ellos están funcionando (up) y otros no (down). Enum:'noService, totalFailure, working, workingPartially'    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `category`: Categoría de este punto de interés. Valores permitidos: Los definidos por la [Taxonomía factual](https://github.com/Factual/places/blob/master/categories/factual_taxonomy.json) junto con otras categorías que el usuario del modelo de datos pueda implementar.  - `clientsConnected`: Número de clientes o usuarios conectados en este punto de interés.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `email`: Dirección de correo electrónico del propietario.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `service`: Este atributo se utiliza para asignar el punto de acceso a uno o varios departamentos de servicios municipales que reciben el servicio inalámbrico. Por ejemplo: Biblioteca, Museos, Servicios Sociales, Deportes...  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `timeInstant`: [Timestamp](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant) guardado por el Agente IoT de FIWARE. Nota: Este atributo no ha sido armonizado para mantener la compatibilidad con las implementaciones de referencia actuales de FIWARE. Puede haber entornos de producción donde el tipo de atributo sea igual a la cadena 'ISO8601'. Si es así, debe considerarse como un sinónimo de 'DateTime'.  - `type`: Tipo de entidad NGSI. Tiene que ser WifiPointOfInterest  - `wifiStatus`: Indica si hay una red inalámbrica disponible en esta ubicación y el servicio que presta. Los valores permitidos son: 'noService' cuando el punto de interés no tiene puntos de acceso instalados, 'working' cuando el punto de interés tiene puntos de acceso instalados y todos ellos están funcionando (up), 'totalFailure' cuando el punto de interés tiene puntos de acceso instalados y todos ellos no están funcionando (down), y 'workingPartially' cuando el punto de interés tiene puntos de acceso instalados y algunos de ellos están funcionando (up) y otros no están funcionando (down). Enum:'noService, totalFailure, working, workingPartially'    
 Propiedades requeridas  
 - `id`  - `type`    
 Este modelo de datos se ha desarrollado en colaboración con el [Ayuntamiento de Valencia](https://www.valencia.es).  
@@ -27,9 +28,6 @@ WifiPointOfInterest:
           type: string    
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
@@ -95,10 +93,10 @@ WifiPointOfInterest:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -118,7 +116,8 @@ WifiPointOfInterest:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -141,7 +140,8 @@ WifiPointOfInterest:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +166,8 @@ WifiPointOfInterest:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -188,7 +189,8 @@ WifiPointOfInterest:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -213,7 +215,8 @@ WifiPointOfInterest:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -240,7 +243,7 @@ WifiPointOfInterest:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    

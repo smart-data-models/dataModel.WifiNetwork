@@ -1,15 +1,12 @@
 Entität: AccessPoint  
 ====================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/AccessPoint/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Diese Entität beschreibt einen Access Point, der eine Netzwerk-Hardware ist, die ein drahtloses Netzwerk erzeugt und anderen Wi-Fi-Geräten erlaubt, sich damit zu verbinden**  
 
 ## Liste der Eigenschaften  
 
-- `TimeInstant`: [Zeitstempel](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant), der vom IoT-Agent von FIWARE gespeichert wird. Hinweis: Dieses Attribut wurde nicht harmonisiert, um die Abwärtskompatibilität mit aktuellen FIWARE-Referenzimplementierungen zu wahren.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `apState`: Enum:'up, down'. Gibt an, ob der Access Point in Betrieb ist (Wert: up), oder ob er nicht in Betrieb oder heruntergefahren ist (Wert: down). Enum:'up, down'  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `category`: Sensor: Ein Gerät, das Ereignisse oder Veränderungen in der physikalischen Umgebung wie Licht, Bewegung oder Temperaturänderungen erkennt und darauf reagiert. https://w3id.org/saref#Sensor.  
-Aktor : Ein Gerät, das für die Bewegung oder Steuerung eines Mechanismus oder Systems verantwortlich ist. https://w3id.org/saref#Actuator.  
-Messgerät : Ein Gerät, das zur genauen Erfassung und Anzeige einer Größe in einer für den Menschen lesbaren Form gebaut ist. Teilweise durch SAREF definiert. HVAC : Gerät für Heizung, Lüftung und Klimatisierung (HVAC), das für ein angenehmes Raumklima sorgt. https://w3id.org/saref#HVAC.  
-Netzwerk : Ein Gerät, das dazu dient, andere Geräte in einem Netzwerk zu verbinden, z. B. Hub, Switch oder Router in einem LAN oder Sensor-Netzwerk. (https://w3id.org/saref#Network.  
-Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufnehmen oder Abspielen von Multimedia-Inhalten wie z. B. Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  - `clientsConnected`: Anzahl der Clients oder Benutzer, die mit dem Access Point verbunden sind.  - `controlledProperty`: Alles, was von einem Sensor erfasst, gemessen oder gesteuert werden kann. Enum:'airPollution, atmosphericPressure, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, gasComsumption, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, tss, turbidity, waterConsumption, waterPollution, weatherConditions, weight, windDirection, windSpeed'  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateInstalled`: Ein Zeitstempel, der angibt, wann das Gerät installiert wurde (wenn es eine Installation erfordert).  - `dateLastReboot`: Ein Zeitstempel, der das letzte Mal angibt, wann das Gerät erfolgreich neu gebootet wurde.  - `dateLastValueReported`: Ein Zeitstempel, der den letzten Zeitpunkt angibt, an dem das Gerät erfolgreich Daten an die Cloud gemeldet hat.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `email`: E-Mail Adresse des Eigentümers.  - `firmwareVersion`: Die Firmware-Version dieses Geräts.  - `hardwareVersion`: Die Hardware-Version dieses Geräts.  - `id`: Eindeutiger Bezeichner der Entität  - `ipAddress`: Die IP-Adresse des Geräts.  - `location`:   - `macAddress`: Die MAC-Adresse des Geräts.  - `modelName`: Der Modellname des Geräts.  - `name`: Der Name dieses Elements.  - `osVersion`: Die Version des Host-Betriebssystems Gerät.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refPointOfInterest`: Der Punkt von Interesse, an dem sich der Zugangspunkt befindet und den Dienst bereitstellt.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `serialNumber`: Die vom Hersteller vergebene Seriennummer.  - `service`: Dieses Attribut wird verwendet, um den Access Point einer oder mehreren kommunalen Dienststellen zuzuordnen, die den Funkdienst empfangen. Zum Beispiel: Bibliothek, Museen, Sozialdienst, Sport...  - `softwareVersion`: Die Softwareversion dieses Geräts.  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ssid`: Liste mit den Namen der SSID (Service Set Identifier), die der Access Point generiert. Ein Access Point kann eine oder mehrere SSID generieren.  - `supportedProtocol`: Unterstützte(s) Protokoll(e) oder Netzwerke  - `type`: NGSI Entity-Typ. Es muss AccessPoint sein    
+- `TimeInstant`: [Zeitstempel](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant), der vom IoT-Agent von FIWARE gespeichert wird. Hinweis: Dieses Attribut wurde nicht harmonisiert, um die Abwärtskompatibilität mit aktuellen FIWARE-Referenzimplementierungen zu wahren.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `apState`: Enum:'up, down'. Gibt an, ob der Access Point in Betrieb ist (Wert: up), oder ob er nicht in Betrieb oder heruntergefahren ist (Wert: down). Enum:'up, down'  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `category`: Sensor: Ein Gerät, das Ereignisse oder Veränderungen in der physikalischen Umgebung wie Licht, Bewegung oder Temperaturänderungen erkennt und darauf reagiert. https://w3id.org/saref#Sensor. Aktor : Ein Gerät, das für die Bewegung oder Steuerung eines Mechanismus oder Systems verantwortlich ist. https://w3id.org/saref#Actuator. Messgerät : Ein Gerät, das zur genauen Erfassung und Anzeige einer Größe in einer für den Menschen lesbaren Form gebaut ist. Teilweise durch SAREF definiert. HVAC : Gerät für Heizung, Lüftung und Klimatisierung (HVAC), das für ein angenehmes Raumklima sorgt. https://w3id.org/saref#HVAC. Netzwerk : Ein Gerät, das dazu dient, andere Geräte in einem Netzwerk zu verbinden, z. B. Hub, Switch oder Router in einem LAN oder Sensor-Netzwerk. (https://w3id.org/saref#Network. Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufnehmen oder Abspielen von Multimedia-Inhalten wie z. B. Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  - `clientsConnected`: Anzahl der Clients oder Benutzer, die mit dem Access Point verbunden sind.  - `controlledProperty`: Alles, was von einem Sensor erfasst, gemessen oder gesteuert werden kann. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateInstalled`: Ein Zeitstempel, der angibt, wann das Gerät installiert wurde (wenn es eine Installation erfordert).  - `dateLastReboot`: Ein Zeitstempel, der das letzte Mal angibt, wann das Gerät erfolgreich neu gebootet wurde.  - `dateLastValueReported`: Ein Zeitstempel, der den letzten Zeitpunkt angibt, an dem das Gerät erfolgreich Daten an die Cloud gemeldet hat.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `email`: E-Mail Adresse des Eigentümers.  - `firmwareVersion`: Die Firmware-Version dieses Geräts.  - `hardwareVersion`: Die Hardware-Version dieses Geräts.  - `id`: Eindeutiger Bezeichner der Entität  - `ipAddress`: Die IP-Adresse des Geräts.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `macAddress`: Die MAC-Adresse des Geräts.  - `modelName`: Der Modellname des Geräts.  - `name`: Der Name dieses Elements.  - `osVersion`: Die Version des Host-Betriebssystems Gerät.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refPointOfInterest`: Der Punkt von Interesse, an dem sich der Zugangspunkt befindet und den Dienst bereitstellt.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `serialNumber`: Die vom Hersteller vergebene Seriennummer.  - `service`: Dieses Attribut wird verwendet, um den Access Point einer oder mehreren kommunalen Dienststellen zuzuordnen, die den Funkdienst empfangen. Zum Beispiel: Bibliothek, Museen, Sozialdienst, Sport...  - `softwareVersion`: Die Softwareversion dieses Geräts.  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ssid`: Liste mit den Namen der SSID (Service Set Identifier), die der Access Point generiert. Ein Access Point kann eine oder mehrere SSID generieren.  - `supportedProtocol`: Unterstützte(s) Protokoll(e) oder Netzwerk(e)  - `type`: NGSI Entity-Typ. Es muss AccessPoint sein    
 Erforderliche Eigenschaften  
 - `address`  - `clientsConnected`  - `id`  - `location`  - `name`  - `type`    
 Der Zugangspunkt kann ein drahtloses Netzwerk in einem Gebäude oder an einem Ort (Platz, Straße, Strand, Garten...) bereitstellen, das mit einem separaten Entitätstyp [WifiPointOfInterest](../../WifiPointOfInterest/) modelliert wird. Dieses Datenmodell wurde in Zusammenarbeit mit dem [Rathaus von Valencia](https://www.valencia.es) entwickelt.  
@@ -37,9 +34,6 @@ AccessPoint:
           type: string    
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
@@ -70,7 +64,7 @@ AccessPoint:
       x-ngsi:    
         model: https://schema.org/Text    
     category:    
-      description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. \nactuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. \nMeter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. \nNetwork : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. \nMultimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'"    
+      description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'"    
       items:    
         enum:    
           - actuator    
@@ -95,21 +89,26 @@ AccessPoint:
       x-ngsi:    
         model: https://schema.org/Number    
     controlledProperty:    
-      description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, gasComsumption, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, tss, turbidity, waterConsumption, waterPollution, weatherConditions, weight, windDirection, windSpeed'''    
+      description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'''    
       items:    
         enum:    
           - airPollution    
           - atmosphericPressure    
+          - averageVelocity    
+          - batteryLife    
+          - batterySupply    
           - cdom    
           - conductance    
           - conductivity    
           - depth    
           - eatingActivity    
+          - eatingActivity    
           - electricityConsumption    
           - energy    
           - fillingLevel    
           - freeChlorine    
-          - gasComsumption    
+          - gasConsumption    
+          - gateOpening    
           - heading    
           - humidity    
           - light    
@@ -132,9 +131,12 @@ AccessPoint:
           - speed    
           - tds    
           - temperature    
+          - trafficFlow    
           - tss    
           - turbidity    
           - waterConsumption    
+          - waterFlow    
+          - waterLevel    
           - waterPollution    
           - weatherConditions    
           - weight    
@@ -208,10 +210,10 @@ AccessPoint:
       x-ngsi:    
         model: https://schema.org/Text    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -231,7 +233,8 @@ AccessPoint:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -254,7 +257,8 @@ AccessPoint:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -279,7 +283,8 @@ AccessPoint:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -301,7 +306,8 @@ AccessPoint:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -326,7 +332,8 @@ AccessPoint:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -353,7 +360,7 @@ AccessPoint:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     macAddress:    
       description: 'The MAC address of the device.'    
       pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$    

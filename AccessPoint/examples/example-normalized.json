@@ -36,7 +36,7 @@
     "type": "Relationship",
     "object": "poi_226"
   },
-  "TimeInstant": {
+  "timeInstant": {
     "type": "DateTime",
     "value": "2020-09-22T09:30:03.00Z"
   },

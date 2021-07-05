@@ -24,7 +24,7 @@
     "Bomberos"
   ],
   "refPointOfInterest": "poi_226",
-  "TimeInstant": "2020-09-22T09:30:03.00Z",
+  "timeInstant": "2020-09-22T09:30:03.00Z",
   "contactPoint": "asistencia_tecnica_wifi@valencia.es",
   "dataProvider": "Airwave",
   "dateInstalled": "2019-01-01T00:00:00.00Z",

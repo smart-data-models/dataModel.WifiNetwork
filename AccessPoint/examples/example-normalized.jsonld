@@ -44,7 +44,7 @@
     "type": "Relationship",
     "object": "poi_226"
   },
-  "TimeInstant": {
+  "timeInstant": {
     "type": "Property",
     "value": {
       "@type": "DateTime",

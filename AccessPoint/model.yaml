@@ -1,13 +1,6 @@
 AccessPoint:
   description: 'This entity describes an Access Point which is a networking hardware that generates a wireless network and allows other Wi-Fi devices to connect to it'
   properties:
-    TimeInstant:
-      description: "[Timestamp](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant) saved by FIWARE's IoT Agent. Note: This attribute has not been harmonized to keep backwards compatibility with current FIWARE reference implementations."
-      format: date-time
-      type: string
-      x-ngsi:
-        model: https://schema.org/DateTime
-        type: Property
     address:
       description: 'The mailing address'
       properties:
@@ -489,6 +482,13 @@ AccessPoint:
       x-ngsi:
         model: '3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket'
         type: Property
+    timeInstant:
+      description: "[Timestamp](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant) saved by FIWARE's IoT Agent. Note: This attribute has not been harmonized to keep backwards compatibility with current FIWARE reference implementations."
+      format: date-time
+      type: string
+      x-ngsi:
+        model: https://schema.org/DateTime
+        type: Property
     type:
       description: 'NGSI Entity type. It has to be AccessPoint'
       enum:
@@ -500,7 +500,5 @@ AccessPoint:
     - id
     - type
     - name
-    - address
-    - location
-    - clientsConnected
   type: object
+  version: 0.1.0

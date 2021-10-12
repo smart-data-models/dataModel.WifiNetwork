@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
-    "$schemaVersion": "0.1.0"
+    "$schemaVersion": "0.1.0",
     "$id": "https://smart-data-models.github.io/dataModel.WifiNetwork/WifiPointOfInterest/schema.json",
     "title": "Smart Data Models - Wifi Point Of Interest",
     "description": "This entity describes a Point of Interest that has a wireless network",

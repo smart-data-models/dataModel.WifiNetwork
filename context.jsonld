@@ -1,6 +1,5 @@
 {
     "@context": {
-        "TimeInstant": "https://smartdatamodels.org/dataModel.WifiNetwork/TimeInstant",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "apState": "https://smartdatamodels.org/dataModel.WifiNetwork/apState",

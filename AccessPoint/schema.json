@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.WifiNetwork/AccessPoint/schema.json",
-    "$schemaVersion": "0.1.0",
+    "$schemaVersion": "0.1.1",
     "title": "Access Point",
     "description": "This entity describes an Access Point which is a networking hardware that generates a wireless network and allows other Wi-Fi devices to connect to it",
     "type": "object",
@@ -70,9 +70,7 @@
                     "description": "Relationship. Model:'https://schema.org/URL'. The point of interest where the access point is located and provides the service."
                 },
                 "timeInstant": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'https://schema.org/DateTime'. [Timestamp](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant) saved by FIWARE's IoT Agent. Note: This attribute has not been harmonized to keep backwards compatibility with current FIWARE reference implementations."
+                    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/timeInstant"
                 },
                 "email": {
                     "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/email"

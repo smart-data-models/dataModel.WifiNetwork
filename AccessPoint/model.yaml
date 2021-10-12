@@ -483,11 +483,11 @@ AccessPoint:
         model: '3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket'
         type: Property
     timeInstant:
-      description: "[Timestamp](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant) saved by FIWARE's IoT Agent. Note: This attribute has not been harmonized to keep backwards compatibility with current FIWARE reference implementations."
+      description: 'Timestamp of the payload . There can be production environments where the attribute type is equal to the `ISO8601` string. If so, it must be considered as a synonym of `DateTime`. This attribute is kept for backwards compatibility with old FIWARE reference implementations.'
       format: date-time
       type: string
       x-ngsi:
-        model: https://schema.org/DateTime
+        model: https://schema.org/Datetime
         type: Property
     type:
       description: 'NGSI Entity type. It has to be AccessPoint'
@@ -501,4 +501,4 @@ AccessPoint:
     - type
     - name
   type: object
-  version: 0.1.0
+  version: 0.1.1

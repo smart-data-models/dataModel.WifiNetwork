@@ -6,7 +6,7 @@ Version: 0.1.1
 This entity describes an Access Point which is a networking hardware that generates a wireless network and allows other Wi-Fi devices to connect to it
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.WifiNetwork/blob/master/AccessPoint/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.WifiNetwork/master/AccessPoint/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.WifiNetwork/blob/master/AccessPoint/doc/spec.md)
 

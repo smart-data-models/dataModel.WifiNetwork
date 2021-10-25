@@ -6,7 +6,7 @@ Version: 0.1.0
 This entity describes a Point of Interest that has a wireless network
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.WifiNetwork/blob/master/WifiPointOfInterest/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.WifiNetwork/master/WifiPointOfInterest/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.WifiNetwork/blob/master/WifiPointOfInterest/doc/spec.md)
 

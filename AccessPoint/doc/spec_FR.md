@@ -574,7 +574,7 @@ AccessPoint:
 }  
 ```  
 #### AccessPoint NGSI-v2 normalisé Exemple  
-Voici un exemple d'un AccessPoint au format JSON-LD tel que normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un AccessPoint au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "ap_542",  

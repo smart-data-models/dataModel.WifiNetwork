@@ -23,6 +23,7 @@
         "macAddress": "https://smartdatamodels.org/dataModel.WifiNetwork/macAddress",
         "modelName": "https://smartdatamodels.org/dataModel.WifiNetwork/modelName",
         "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "osVersion": "https://smartdatamodels.org/dataModel.WifiNetwork/osVersion",
         "owner": "https://smartdatamodels.org/owner",
         "refPointOfInterest": "https://smartdatamodels.org/dataModel.WifiNetwork/refPointOfInterest",

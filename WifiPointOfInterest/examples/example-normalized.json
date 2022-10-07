@@ -58,6 +58,7 @@
   "source": {
     "type": "Text",
     "value": ""
-  }
+  },
+  "@context": ["https://raw.githubusercontent.com/smart-data-models/dataModel.WifiNetwork/master/context.jsonld"]
 }
 

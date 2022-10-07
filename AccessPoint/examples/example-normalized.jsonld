@@ -127,5 +127,6 @@
   "source": {
     "type": "Property",
     "value": "Cisco"
-  }
+  },
+  "@context": ["https://raw.githubusercontent.com/smart-data-models/dataModel.WifiNetwork/master/context.jsonld"]
 }

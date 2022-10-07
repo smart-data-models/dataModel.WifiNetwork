@@ -11,7 +11,7 @@ info:
   description:  |
     This entity describes an Access Point which is a networking hardware that generates a wireless network and allows other Wi-Fi devices to connect to it
   title: AccessPoint
-  version: "1.0.0"
+  version: "0.1.1"
 openapi: "3.0.0"
 
 paths: 

@@ -285,11 +285,11 @@ WifiPointOfInterest:
       x-ngsi:
         type: Property
     timeInstant:
-      description: "[Timestamp](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant) saved by FIWARE's IoT Agent. Note: This attribute has not been harmonized to keep backwards compatibility with current FIWARE reference implementations. There can be production environments where the attribute type is equal to the 'ISO8601' string. If so, it must be considered as a synonym of 'DateTime'."
+      description: 'Timestamp of the payload . There can be production environments where the attribute type is equal to the `ISO8601` string. If so, it must be considered as a synonym of `DateTime`. This attribute is kept for backwards compatibility with old FIWARE reference implementations.'
       format: date-time
       type: string
       x-ngsi:
-        model: https://schema.org/DateTime
+        model: https://schema.org/Datetime
         type: Property
     type:
       description: 'NGSI Entity type. it has to be WifiPointOfInterest'
@@ -313,3 +313,9 @@ WifiPointOfInterest:
     - id
     - type
   type: object
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.WifiNetwork/blob/master/WifiPointOfInterest/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.WifiNetwork/WifiPointOfInterest/schema.json
+  x-model-tags: ""
+  x-version: 0.1.0

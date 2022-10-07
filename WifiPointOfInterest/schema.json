@@ -1,7 +1,9 @@
 {
     "$schema": "http://json-schema.org/schema#",
+    "modelTags": "",
+    "$schemaVersion": "0.1.0",
     "$id": "https://smart-data-models.github.io/dataModel.WifiNetwork/WifiPointOfInterest/schema.json",
-    "title": "Wifi Point Of Interest",
+    "title": "Smart Data Models - Wifi Point Of Interest",
     "description": "This entity describes a Point of Interest that has a wireless network",
     "type": "object",
     "allOf": [
@@ -43,9 +45,7 @@
                     }
                 },
                 "timeInstant": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'https://schema.org/DateTime'. [Timestamp](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant) saved by FIWARE's IoT Agent. Note: This attribute has not been harmonized to keep backwards compatibility with current FIWARE reference implementations. There can be production environments where the attribute type is equal to the 'ISO8601' string. If so, it must be considered as a synonym of 'DateTime'."
+                    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/timeInstant"
                 },
                 "category": {
                     "type": "array",
@@ -63,6 +63,5 @@
     "required": [
         "id",
         "type"
-    ],
-    "$schemaVersion": "0.0.1"
+    ]
 }

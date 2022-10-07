@@ -2,14 +2,15 @@ Entität: AccessPoint
 ====================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/AccessPoint/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Diese Entität beschreibt einen Access Point, der eine Netzwerk-Hardware ist, die ein drahtloses Netzwerk erzeugt und anderen Wi-Fi-Geräten erlaubt, sich damit zu verbinden**  
+Globale Beschreibung: **Diese Entität beschreibt einen Access Point, eine Netzwerk-Hardware, die ein drahtloses Netzwerk generiert und anderen Wi-Fi-Geräten erlaubt, sich damit zu verbinden**  
+Version: 0.1.1  
 
 ## Liste der Eigenschaften  
 
-- `TimeInstant`: [Zeitstempel](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant), der vom IoT-Agent von FIWARE gespeichert wird. Hinweis: Dieses Attribut wurde nicht harmonisiert, um die Abwärtskompatibilität mit aktuellen FIWARE-Referenzimplementierungen zu wahren.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `apState`: Enum:'up, down'. Gibt an, ob der Access Point in Betrieb ist (Wert: up), oder ob er nicht in Betrieb oder heruntergefahren ist (Wert: down). Enum:'up, down'  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `category`: Sensor: Ein Gerät, das Ereignisse oder Veränderungen in der physikalischen Umgebung wie Licht, Bewegung oder Temperaturänderungen erkennt und darauf reagiert. https://w3id.org/saref#Sensor. Aktor : Ein Gerät, das für die Bewegung oder Steuerung eines Mechanismus oder Systems verantwortlich ist. https://w3id.org/saref#Actuator. Messgerät : Ein Gerät, das zur genauen Erfassung und Anzeige einer Größe in einer für den Menschen lesbaren Form gebaut ist. Teilweise durch SAREF definiert. HVAC : Gerät für Heizung, Lüftung und Klimatisierung (HVAC), das für ein angenehmes Raumklima sorgt. https://w3id.org/saref#HVAC. Netzwerk : Ein Gerät, das dazu dient, andere Geräte in einem Netzwerk zu verbinden, z. B. Hub, Switch oder Router in einem LAN oder Sensor-Netzwerk. (https://w3id.org/saref#Network. Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufnehmen oder Abspielen von Multimedia-Inhalten wie z. B. Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  - `clientsConnected`: Anzahl der Clients oder Benutzer, die mit dem Access Point verbunden sind.  - `controlledProperty`: Alles, was von einem Sensor erfasst, gemessen oder gesteuert werden kann. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateInstalled`: Ein Zeitstempel, der angibt, wann das Gerät installiert wurde (wenn es eine Installation erfordert).  - `dateLastReboot`: Ein Zeitstempel, der das letzte Mal angibt, wann das Gerät erfolgreich neu gebootet wurde.  - `dateLastValueReported`: Ein Zeitstempel, der den letzten Zeitpunkt angibt, an dem das Gerät erfolgreich Daten an die Cloud gemeldet hat.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `email`: E-Mail Adresse des Eigentümers.  - `firmwareVersion`: Die Firmware-Version dieses Geräts.  - `hardwareVersion`: Die Hardware-Version dieses Geräts.  - `id`: Eindeutiger Bezeichner der Entität  - `ipAddress`: Die IP-Adresse des Geräts.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `macAddress`: Die MAC-Adresse des Geräts.  - `modelName`: Der Modellname des Geräts.  - `name`: Der Name dieses Elements.  - `osVersion`: Die Version des Host-Betriebssystems Gerät.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refPointOfInterest`: Der Punkt von Interesse, an dem sich der Zugangspunkt befindet und den Dienst bereitstellt.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `serialNumber`: Die vom Hersteller vergebene Seriennummer.  - `service`: Dieses Attribut wird verwendet, um den Access Point einer oder mehreren kommunalen Dienststellen zuzuordnen, die den Funkdienst empfangen. Zum Beispiel: Bibliothek, Museen, Sozialdienst, Sport...  - `softwareVersion`: Die Softwareversion dieses Geräts.  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `ssid`: Liste mit den Namen der SSID (Service Set Identifier), die der Access Point generiert. Ein Access Point kann eine oder mehrere SSID generieren.  - `supportedProtocol`: Unterstützte(s) Protokoll(e) oder Netzwerk(e)  - `type`: NGSI Entity-Typ. Es muss AccessPoint sein    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `apState`: Enum:'up, down'. Gibt an, ob der Zugangspunkt in Betrieb ist (Wert: up), oder ob er nicht in Betrieb oder abgeschaltet ist (Wert: down). Enum:'up, down'  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `category`: Sensor: Ein Gerät, das Ereignisse oder Veränderungen in der physikalischen Umgebung wie Licht, Bewegung oder Temperaturveränderungen erkennt und darauf reagiert. https://w3id.org/saref#Sensor. Aktor: Ein Gerät, das für die Bewegung oder Steuerung eines Mechanismus oder Systems verantwortlich ist. https://w3id.org/saref#Actuator. Messgerät : Ein Gerät, das zur genauen Erfassung und Anzeige einer Größe in einer für den Menschen lesbaren Form dient. Teilweise durch SAREF definiert. HVAC : Heizungs-, Belüftungs- und Klimaanlagen (HVAC), die für ein angenehmes Raumklima sorgen. https://w3id.org/saref#HVAC. Netzwerk : Ein Gerät, das dazu dient, andere Geräte in einem Netzwerk zu verbinden, wie z. B. Hub, Switch oder Router in einem LAN oder Sensornetzwerk. (https://w3id.org/saref#Network. Multimedia : Ein Gerät zum Anzeigen, Speichern, Aufzeichnen oder Abspielen von Multimedia-Inhalten wie Audio, Bilder, Animationen, Video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  - `clientsConnected`: Anzahl der Clients oder Benutzer, die mit dem Zugangspunkt verbunden sind.  - `controlledProperty`: Alles, was von einem Sensor erfasst, gemessen oder kontrolliert werden kann. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateInstalled`: Ein Zeitstempel, der angibt, wann das Gerät installiert wurde (falls es installiert werden muss).  - `dateLastReboot`: Ein Zeitstempel, der angibt, wann das Gerät das letzte Mal erfolgreich neu gebootet wurde.  - `dateLastValueReported`: Ein Zeitstempel, der den letzten Zeitpunkt angibt, zu dem das Gerät erfolgreich Daten an die Cloud gemeldet hat.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `email`: E-Mail Adresse des Eigentümers.  - `firmwareVersion`: Die Firmware-Version dieses Geräts.  - `hardwareVersion`: Die Hardware-Version dieses Geräts.  - `id`: Eindeutiger Bezeichner der Entität  - `ipAddress`: Die IP-Adresse des Geräts.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `macAddress`: Die MAC-Adresse des Geräts.  - `modelName`: Modellname des Geräts.  - `name`: Der Name dieses Artikels.  - `osVersion`: Die Version des Host-Betriebssystems Gerät.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `refPointOfInterest`: Der Punkt von Interesse, an dem sich der Zugangspunkt befindet und den Dienst anbietet.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `serialNumber`: Die vom Hersteller vergebene Seriennummer.  - `service`: Dieses Attribut wird verwendet, um den Zugangspunkt einer oder mehreren kommunalen Dienststellen zuzuordnen, die den drahtlosen Dienst empfangen. Zum Beispiel: Bibliothek, Museen, Sozialdienste, Sport...  - `softwareVersion`: Die Softwareversion dieses Geräts.  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `ssid`: Liste der Namen der SSID (Service Set Identifier), die der Zugangspunkt erzeugt. Ein Zugangspunkt kann eine oder mehrere SSID erzeugen.  - `supportedProtocol`: Unterstützte(s) Protokoll(e) oder Netzwerk(e)  - `timeInstant`: Zeitstempel der Nutzdaten. Es kann Produktionsumgebungen geben, in denen der Attributtyp der Zeichenfolge "ISO8601" entspricht. In diesem Fall ist es als Synonym für "DateTime" zu betrachten. Dieses Attribut wird aus Gründen der Abwärtskompatibilität mit alten FIWARE-Referenzimplementierungen beibehalten.  - `type`: NGSI-Entitätstyp. Es muss AccessPoint sein    
 Erforderliche Eigenschaften  
-- `address`  - `clientsConnected`  - `id`  - `location`  - `name`  - `type`    
-Der Zugangspunkt kann ein drahtloses Netzwerk in einem Gebäude oder an einem Ort (Platz, Straße, Strand, Garten...) bereitstellen, das mit einem separaten Entitätstyp [WifiPointOfInterest](../../WifiPointOfInterest/) modelliert wird. Dieses Datenmodell wurde in Zusammenarbeit mit dem [Rathaus von Valencia](https://www.valencia.es) entwickelt.  
+- `id`  - `name`  - `type`    
+Der Zugangspunkt kann ein drahtloses Netzwerk in einem Gebäude oder an einem Ort (Platz, Straße, Strand, Garten...) bereitstellen, das mit einem separaten Entitätstyp [WifiPointOfInterest](../../WifiPointOfInterest/) modelliert wird. Dieses Datenmodell wurde in Zusammenarbeit mit dem [Rathaus von Valencia] (https://www.valencia.es) entwickelt.  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -17,12 +18,6 @@ Entität: AccessPoint
 AccessPoint:    
   description: 'This entity describes an Access Point which is a networking hardware that generates a wireless network and allows other Wi-Fi devices to connect to it'    
   properties:    
-    TimeInstant:    
-      description: "[Timestamp](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant) saved by FIWARE's IoT Agent. Note: This attribute has not been harmonized to keep backwards compatibility with current FIWARE reference implementations."    
-      format: date-time    
-      type: Property    
-      x-ngsi:    
-        model: https://schema.org/DateTime    
     address:    
       description: 'The mailing address'    
       properties:    
@@ -44,25 +39,30 @@ AccessPoint:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     apState:    
       description: 'Enum:''up, down''. Indicates whether the access point is working (value: up), or it is not working or shut down (value: down). Enum:''up, down'''    
       enum:    
         - up    
         - down    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: http://schema.org/Text    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     category:    
       description: "Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'"    
       items:    
@@ -79,15 +79,17 @@ AccessPoint:
           - network    
           - sensor    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     clientsConnected:    
       description: 'Number of clients or users connected to the access point.'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     controlledProperty:    
       description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'''    
       items:    
@@ -143,55 +145,71 @@ AccessPoint:
           - windDirection    
           - windSpeed    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateInstalled:    
       description: 'A timestamp which denotes when the device was installed (if it requires installation).'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateLastReboot:    
       description: 'A timestamp which denotes the last time when the device was successfully rebooted.'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateLastValueReported:    
       description: 'A timestamp which denotes the last time when the device successfully reported data to the cloud.'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     email:    
       description: 'Email address of owner.'    
       format: idn-email    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     firmwareVersion:    
       description: 'The firmware version of this device.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     hardwareVersion:    
       description: 'The hardware version of this device.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     id:    
       anyOf: &accesspoint_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -203,12 +221,14 @@ AccessPoint:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     ipAddress:    
       description: 'The IP address of the device.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -360,32 +380,40 @@ AccessPoint:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     macAddress:    
       description: 'The MAC address of the device.'    
       pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     modelName:    
       description: 'Device''s model name.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     osVersion:    
       description: 'The version of the host operating system device.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *accesspoint_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     refPointOfInterest:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -397,9 +425,9 @@ AccessPoint:
           format: uri    
           type: string    
       description: 'The point of interest where the access point is located and provides the service.'    
-      type: Relationship    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Relationship    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -410,34 +438,41 @@ AccessPoint:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     serialNumber:    
       description: 'The serial number assigned by the manufacturer.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/serialNumber    
+        type: Property    
     service:    
       description: 'This attribute is used to assign the access point to one or several municipal service departments that receive the wireless service. For example: Library, Museums, Social Services, Sports...'    
       items:    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     softwareVersion:    
       description: 'The software version of this device.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     ssid:    
       description: 'List of the names of the SSID (service set identifier) that the access point generates. One access point can generate one or several SSID.'    
       items:    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     supportedProtocol:    
       description: 'Supported protocol(s) or networks'    
       items:    
@@ -460,27 +495,35 @@ AccessPoint:
           - ul20    
           - websocket    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: '3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket'    
+        type: Property    
+    timeInstant:    
+      description: 'Timestamp of the payload . There can be production environments where the attribute type is equal to the `ISO8601` string. If so, it must be considered as a synonym of `DateTime`. This attribute is kept for backwards compatibility with old FIWARE reference implementations.'    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Datetime    
+        type: Property    
     type:    
       description: 'NGSI Entity type. It has to be AccessPoint'    
       enum:    
         - AccessPoint    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
     - name    
-    - address    
-    - location    
-    - clientsConnected    
   type: object    
+  version: 0.1.1    
 ```  
 </details>    
 ## Beispiel-Nutzlasten  
 #### AccessPoint NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für einen AccessPoint im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen AccessPoint im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "ap_542",  
@@ -488,19 +531,27 @@ AccessPoint:
   "address": {  
     "streetAddress": "Avda. Plata, 26",  
     "addressLocality": "Valencia"  
-    },  
+  },  
   "apState": "up",  
   "clientsConnected": 125,  
   "name": "Bomberos_ParqueCentral_Planta_1",  
   "location": {  
     "type": "Point",  
-    "coordinates": [-0.367589, 39.454197]  
+    "coordinates": [  
+      -0.367589,  
+      39.454197  
+    ]  
   },  
-  "ssid": ["AVC", "wifivalencia"],  
+  "ssid": [  
+    "AVC",  
+    "wifivalencia"  
+  ],  
   "clientsConnected": 258,  
-  "service": ["Bomberos"],  
+  "service": [  
+    "Bomberos"  
+  ],  
   "refPointOfInterest": "poi_226",  
-  "TimeInstant": "2020-09-22T09:30:03.00Z",  
+  "timeInstant": "2020-09-22T09:30:03.00Z",  
   "contactPoint": "asistencia_tecnica_wifi@valencia.es",  
   "dataProvider": "Airwave",  
   "dateInstalled": "2019-01-01T00:00:00.00Z",  
@@ -513,7 +564,9 @@ AccessPoint:
   "macAddress": "00:2E:89:25:78:05",  
   "modelName": "Aironet 1000 LWAPP",  
   "osVersion": "",  
-  "owner": ["Ayuntamiento_de_Valencia"],  
+  "owner": [  
+    "Ayuntamiento_de_Valencia"  
+  ],  
   "provider": "Cisco",  
   "serialNumber": "KWC33301C44",  
   "softwareVersion": "",  
@@ -521,7 +574,7 @@ AccessPoint:
 }  
 ```  
 #### AccessPoint NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen AccessPoint im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen AccessPoint im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "ap_542",  
@@ -561,7 +614,7 @@ AccessPoint:
     "type": "Relationship",  
     "object": "poi_226"  
   },  
-  "TimeInstant": {  
+  "timeInstant": {  
     "type": "DateTime",  
     "value": "2020-09-22T09:30:03.00Z"  
   },  
@@ -635,8 +688,8 @@ AccessPoint:
   }    
 }  
 ```  
-#### AccessPoint NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für einen AccessPoint im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+#### AccessPoint NGSI-LD-Schlüsselwerte Beispiel  
+Hier ist ein Beispiel für einen AccessPoint im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "ap_542",  
@@ -664,7 +717,7 @@ AccessPoint:
     "Bomberos"  
   ],  
   "refPointOfInterest": "poi_226",  
-  "TimeInstant": "2020-09-22T09:30:03.00Z",  
+  "timeInstant": "2020-09-22T09:30:03.00Z",  
   "contactPoint": "asistencia_tecnica_wifi@valencia.es",  
   "dataProvider": "Airwave",  
   "dateInstalled": "2019-01-01T00:00:00.00Z",  
@@ -690,7 +743,7 @@ AccessPoint:
 }  
 ```  
 #### AccessPoint NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für einen AccessPoint im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen AccessPoint im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "ap_542",  
@@ -738,7 +791,7 @@ AccessPoint:
     "type": "Relationship",  
     "object": "poi_226"  
   },  
-  "TimeInstant": {  
+  "timeInstant": {  
     "type": "Property",  
     "value": {  
       "@type": "DateTime",  
@@ -824,3 +877,4 @@ AccessPoint:
   }  
 }  
 ```  
+Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht

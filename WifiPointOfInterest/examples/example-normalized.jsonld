@@ -1,66 +1,65 @@
 {
-  "id": "poi_226",
-  "type": "WifiPointOfInterest",
-  "name": {
-    "type": "Property",
-    "value": "Parque Central de Bomberos"
-  },
-  "address": {
-    "type": "Property",
-    "value": "Avda. Plata, 26. Valencia"
-  },
-  "location": {
-    "type": "Geoproperty",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -0.367589,
-        39.454197
-      ]
+    "id": "poi_226",
+    "type": "WifiPointOfInterest",
+    "TimeInstant": {
+        "type": "DateTime",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2020-09-22T09:30:03.00Z"
+        }
+    },
+    "address": {
+        "type": "Property",
+        "value": "Avda. Plata, 26. Valencia"
+    },
+    "category": {
+        "type": "Property",
+        "value": [
+            "70-Servicios de Emergencia"
+        ]
+    },
+    "clientsConnected": {
+        "type": "Property",
+        "value": 1563
+    },
+    "contactPoint": {
+        "type": "Property",
+        "value": "asistencia_tecnica_wifi@valencia.es"
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "B\u00fasqueda del nombre/direcci\u00f3n en google"
+    },
+    "description": {
+        "type": "Property",
+        "value": "Edificio del Parque Central de Bomberos"
+    },
+    "location": {
+        "type": "Geoproperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -0.367589,
+                39.454197
+            ]
+        }
+    },
+    "name": {
+        "type": "Property",
+        "value": "Parque Central de Bomberos"
+    },
+    "service": {
+        "type": "Property",
+        "value": [
+            "Bomberos"
+        ]
+    },
+    "source": {
+        "type": "Property",
+        "value": ""
+    },
+    "wifiStatus": {
+        "type": "Property",
+        "value": "working"
     }
-  },
-  "clientsConnected": {
-    "type": "Property",
-    "value": 1563
-  },
-  "wifiStatus": {
-    "type": "Property",
-    "value": "working"
-  },
-  "service": {
-    "type": "Property",
-    "value": [
-      "Bomberos"
-    ]
-  },
-  "category": {
-    "type": "Property",
-    "value": [
-      "70-Servicios de Emergencia"
-    ]
-  },
-  "TimeInstant": {
-    "type": "DateTime",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2020-09-22T09:30:03.00Z"
-    }
-  },
-  "contactPoint": {
-    "type": "Property",
-    "value": "asistencia_tecnica_wifi@valencia.es"
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Búsqueda del nombre/dirección en google"
-  },
-  "description": {
-    "type": "Property",
-    "value": "Edificio del Parque Central de Bomberos"
-  },
-  "source": {
-    "type": "Property",
-    "value": ""
-  }
 }
-

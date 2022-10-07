@@ -1,18 +1,18 @@
-Entity: WifiPointOfInterest  
+Entità: WifiPointOfInterest  
 ===========================  
-[Open License](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/WifiPointOfInterest/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Global description: **This entity describes a Point of Interest that has a wireless network**  
-version: 0.1.0  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/WifiPointOfInterest/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: **Questa entità descrive un punto di interesse che ha una rete wireless**  
+versione: 0.1.0  
 
-## List of properties  
+## Elenco delle proprietà  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `category`: Category of this point of interest. Allowed values: Those defined by the [Factual taxonomy](https://github.com/Factual/places/blob/master/categories/factual_taxonomy.json) together with other categories that the user of the data model may implement.  - `clientsConnected`: Number of clients or users connected in this point of interest.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `email`: Email address of owner.  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `seeAlso`: list of uri pointing to additional resources about the item  - `service`: This attribute is used to assign the access point to one or several municipal service departments that receive the wireless service. For example: Library, Museums, Social Services, Sports...  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `timeInstant`: Timestamp of the payload . There can be production environments where the attribute type is equal to the `ISO8601` string. If so, it must be considered as a synonym of `DateTime`. This attribute is kept for backwards compatibility with old FIWARE reference implementations.  - `type`: NGSI Entity type. it has to be WifiPointOfInterest  - `wifiStatus`: Indicates if there is a wireless network available at    this location and the service that it is providing. The allowed values are: 'noService' when the point of interest has no access points installed, 'working' when the point of interest has access points installed and all of them are working (up), 'totalFailure' when the point of interest has access points installed and all of them are not working (down), and 'workingPartially' when the point of interest has access points installed and some of them are working (up) and some of then are not working (down). Enum:'noService, totalFailure, working, workingPartially'    
-Required properties  
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `category`: Categoria di questo punto di interesse. Valori consentiti: Quelli definiti dalla [tassonomia dei fatti](https://github.com/Factual/places/blob/master/categories/factual_taxonomy.json) insieme ad altre categorie che l'utente del modello di dati può implementare.  - `clientsConnected`: Numero di clienti o utenti connessi in questo punto di interesse.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `email`: Indirizzo e-mail del proprietario.  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `service`: Questo attributo è usato per assegnare il punto d'accesso a uno o più servizi comunali che ricevono il servizio wireless. Per esempio: Biblioteca, Musei, Servizi sociali, Sport...  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `timeInstant`: Timestamp del carico utile. Ci possono essere ambienti di produzione in cui il tipo di attributo è uguale alla stringa `ISO8601`. In tal caso, deve essere considerato come un sinonimo di `DateTime`. Questo attributo è mantenuto per compatibilità all'indietro con le vecchie implementazioni di riferimento FIWARE.  - `type`: Tipo di entità NGSI. deve essere WifiPointOfInterest  - `wifiStatus`: Indica se c'è una rete wireless disponibile in questa località e il servizio che sta fornendo. I valori consentiti sono: 'noService' quando il punto di interesse non ha punti di accesso installati, 'working' quando il punto di interesse ha punti di accesso installati e tutti funzionanti (up), 'totalFailure' quando il punto di interesse ha punti di accesso installati e tutti non funzionanti (down), e 'workingPartially' quando il punto di interesse ha punti di accesso installati e alcuni di essi sono funzionanti (up) e alcuni non sono funzionanti (down). Enum:'noService, totalFailure, working, workingPartially'    
+Proprietà richieste  
 - `id`  - `type`    
-This data model has been developed in cooperation with the [Valencia City Hall](https://www.valencia.es).  
-## Data Model description of properties  
-Sorted alphabetically (click for details)  
+Questo modello di dati è stato sviluppato in collaborazione con il [Comune di Valencia] (https://www.valencia.es).  
+## Descrizione del modello di dati delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WifiPointOfInterest:    
@@ -333,9 +333,9 @@ WifiPointOfInterest:
   version: 0.1.0    
 ```  
 </details>    
-## Example payloads    
-#### WifiPointOfInterest NGSI-v2 key-values Example    
-Here is an example of a WifiPointOfInterest in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+## Esempio di payloads  
+#### WifiPointOfInterest NGSI-v2 valori chiave Esempio  
+Ecco un esempio di un WifiPointOfInterest in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "poi_226",  
@@ -360,8 +360,8 @@ WifiPointOfInterest:
   "source": ""  
 }  
 ```  
-#### WifiPointOfInterest NGSI-v2 normalized Example    
-Here is an example of a WifiPointOfInterest in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+#### WifiPointOfInterest NGSI-v2 normalizzato Esempio  
+Ecco un esempio di un WifiPointOfInterest in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "poi_226",  
@@ -426,8 +426,8 @@ WifiPointOfInterest:
   }  
 }  
 ```  
-#### WifiPointOfInterest NGSI-LD key-values Example    
-Here is an example of a WifiPointOfInterest in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+#### WifiPointOfInterest NGSI-LD valori chiave Esempio  
+Ecco un esempio di un WifiPointOfInterest in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "poi_226",  
@@ -462,8 +462,8 @@ WifiPointOfInterest:
   ]  
 }  
 ```  
-#### WifiPointOfInterest NGSI-LD normalized Example    
-Here is an example of a WifiPointOfInterest in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+#### WifiPointOfInterest NGSI-LD normalizzato Esempio  
+Ecco un esempio di un WifiPointOfInterest in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "poi_226",  
@@ -531,4 +531,4 @@ WifiPointOfInterest:
   }  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza

@@ -1,18 +1,18 @@
-Entidad: AccessPoint  
-====================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/AccessPoint/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Esta entidad describe un Punto de Acceso que es un hardware de red que genera una red inalámbrica y permite que otros dispositivos Wi-Fi se conecten a ella**  
-versión: 0.1.1  
+エンティティアクセスポイント  
+==============  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/AccessPoint/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**このエンティティは、無線ネットワークを生成し、他のWi-Fiデバイスがそれに接続できるようにするネットワークハードウェアであるアクセスポイントについて説明します。  
+バージョン: 0.1.1  
 
-## Lista de propiedades  
+## プロパティのリスト  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `apState`: Enum:'up, down'. Indica si el punto de acceso está funcionando (valor: up), o no está funcionando o está apagado (valor: down). Enum:'up, down'  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `category`: Sensor: Dispositivo que detecta y responde a eventos o cambios en el entorno físico, como la luz, el movimiento o los cambios de temperatura. https://w3id.org/saref#Sensor. Actuador : Dispositivo encargado de mover o controlar un mecanismo o sistema. https://w3id.org/saref#Actuator. Medidor : Dispositivo construido para detectar y mostrar con precisión una cantidad de forma legible por un ser humano. Definido parcialmente por la SAREF. HVAC : Dispositivo de Calefacción, Ventilación y Aire Acondicionado (HVAC) que proporciona confort ambiental en interiores. https://w3id.org/saref#HVAC. Red : Dispositivo utilizado para conectar otros dispositivos en una red, como el concentrador, el conmutador o el router en una red LAN o de sensores. (https://w3id.org/saref#Network. Multimedia : Dispositivo diseñado para mostrar, almacenar, grabar o reproducir contenidos multimedia como audio, imágenes, animación, vídeo. Enum:'actuador, baliza, pistola final, HVAC, implemento, irrSection, irrSystem, medidor, multimedia, red, sensor'  - `clientsConnected`: Número de clientes o usuarios conectados al punto de acceso.  - `controlledProperty`: Cualquier cosa que pueda ser detectada, medida o controlada por. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movimientoActividad, nivel de ruido, ocupación, orp, pH, potencia, precipitación, presión, índice de refracción, salinidad, humo, humedad del suelo, radiación solar, velocidad, tds, temperatura, flujo de tráfico, tss, turbidez, consumo de agua, flujo de agua, nivel de agua, contaminación del agua, condiciones meteorológicas, peso, dirección del viento, velocidad del viento".  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateInstalled`: Una marca de tiempo que indica cuándo se instaló el dispositivo (si requiere instalación).  - `dateLastReboot`: Una marca de tiempo que denota la última vez que el dispositivo se reinició con éxito.  - `dateLastValueReported`: Una marca de tiempo que denota la última vez que el dispositivo comunicó correctamente los datos a la nube.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `email`: Dirección de correo electrónico del propietario.  - `firmwareVersion`: La versión del firmware de este dispositivo.  - `hardwareVersion`: La versión de hardware de este dispositivo.  - `id`: Identificador único de la entidad  - `ipAddress`: La dirección IP del dispositivo.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `macAddress`: La dirección MAC del dispositivo.  - `modelName`: Nombre del modelo del dispositivo.  - `name`: El nombre de este artículo.  - `osVersion`: La versión del dispositivo del sistema operativo anfitrión.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refPointOfInterest`: El punto de interés en el que se encuentra el punto de acceso y que presta el servicio.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `serialNumber`: El número de serie asignado por el fabricante.  - `service`: Este atributo se utiliza para asignar el punto de acceso a uno o varios departamentos de servicios municipales que reciben el servicio inalámbrico. Por ejemplo: Biblioteca, Museos, Servicios Sociales, Deportes...  - `softwareVersion`: La versión de software de este dispositivo.  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `ssid`: Lista de los nombres del SSID (identificador de conjunto de servicios) que genera el punto de acceso. Un punto de acceso puede generar uno o varios SSID.  - `supportedProtocol`: Protocolo(s) o redes compatibles  - `timeInstant`: Marca de tiempo de la carga útil . Puede haber entornos de producción en los que el tipo de atributo sea igual a la cadena `ISO8601`. Si es así, debe considerarse como un sinónimo de `DateTime`. Este atributo se mantiene por compatibilidad con las antiguas implementaciones de referencia de FIWARE.  - `type`: Tipo de entidad NGSI. Tiene que ser AccessPoint    
-Propiedades requeridas  
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `apState`: Enum:'up, down'.アクセスポイントが動作しているか（値：up）、動作していないかシャットダウンしているか（値：down）を示します。列挙:'up, down'  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `category`: センサー。光、動き、温度変化など、物理的環境における事象や変化を検出し、応答する装置。https://w3id.org/saref#Sensor. アクチュエータ : メカニズムやシステムを動かしたり、制御したりする役割を担う装置。https://w3id.org/saref#Actuator.計器 : 人間が読める形で量を正確に検出し、表示するために作られた装置のこと。SAREFで一部定義されている。HVAC : 室内環境の快適さを提供する暖房、換気、空調（HVAC）機器。https://w3id.org/saref#HVAC。ネットワーク : LANやセンサーネットワークにおけるハブ、スイッチ、ルーターなど、ネットワーク内で他の機器を接続するための装置。(https://w3id.org/saref#Network。マルチメディア。音声、画像、アニメーション、ビデオなどのマルチメディアコンテンツを表示、保存、記録、再生するための装置。Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'.  - `clientsConnected`: アクセスポイントに接続しているクライアントまたはユーザーの数。  - `controlledProperty`: 感知、測定、制御が可能なもの。イナム。'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion,movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateInstalled`: デバイスがインストールされたことを示すタイムスタンプ（インストールが必要な場合）。  - `dateLastReboot`: デバイスが最後に正常に再起動された時間を示すタイムスタンプです。  - `dateLastValueReported`: デバイスがクラウドへのデータ報告に成功した最後の時間を示すタイムスタンプ。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `email`: 所有者のEメールアドレス  - `firmwareVersion`: 本機のファームウェアのバージョン。  - `hardwareVersion`: 本機のハードウェアバージョンです。  - `id`: エンティティのユニークな識別子  - `ipAddress`: 機器のIPアドレスです。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `macAddress`: 機器のMACアドレスです。  - `modelName`: デバイスのモデル名です。  - `name`: このアイテムの名前です。  - `osVersion`: ホストOSデバイスのバージョンです。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `refPointOfInterest`: アクセスポイントが設置され、サービスを提供する地点。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `serialNumber`: メーカーから割り当てられたシリアルナンバー。  - `service`: この属性は、ワイヤレスサービスを受ける1つまたは複数の自治体のサービス部門にアクセスポイントを割り当てるために使用されます。例えば、以下のようになります。図書館、博物館、社会サービス、スポーツ...。  - `softwareVersion`: 本機のソフトウェアのバージョン。  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `ssid`: アクセスポイントが生成するSSID（サービスセット識別子）の名前のリスト。1つのアクセスポイントが1つまたは複数のSSIDを生成することができます。  - `supportedProtocol`: 対応するプロトコルやネットワーク  - `timeInstant`: ペイロードのタイムスタンプ。本番環境では、属性タイプが `ISO8601` の文字列と同じである場合があります。その場合は、`DateTime` の同義語として考えなければなりません。この属性は、古いFIWAREリファレンスの実装との下位互換性のために残されています。  - `type`: NGSI エンティティタイプ。AccessPointである必要があります。    
+必須項目  
 - `id`  - `name`  - `type`    
-El punto de acceso puede proporcionar una red inalámbrica en un edificio o en un lugar (plaza, calle, playa, jardín...) modelado con un tipo de entidad separado [WifiPointOfInterest](../../WifiPointOfInterest/). Este modelo de datos ha sido desarrollado en colaboración con el [Ayuntamiento de Valencia](https://www.valencia.es).  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+アクセスポイントは、建物や場所（広場、通り、海岸、庭など）で無線ネットワークを提供することができます。これは、分離されたエンティティタイプ[WifiPointOfInterest](../../WifiPointOfInterest/)でモデル化されています。このデータモデルは、[Valencia City Hall](https://www.valencia.es)の協力を得て開発されました。  
+## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AccessPoint:    
@@ -521,9 +521,9 @@ AccessPoint:
   version: 0.1.1    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### AccessPoint NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un AccessPoint en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## ペイロードの例  
+#### AccessPoint NGSI-v2 キーバリューの例  
+ここでは、AccessPointをJSON-LD形式でkey-valuesにした例を紹介します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "ap_542",  
@@ -573,8 +573,8 @@ AccessPoint:
   "source": "Cisco"  
 }  
 ```  
-#### AccessPoint NGSI-v2 normalizado Ejemplo  
-Aquí hay un ejemplo de un AccessPoint en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### AccessPoint NGSI-v2の正規化例  
+ここでは、JSON-LD形式のAccessPointを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "ap_542",  
@@ -688,8 +688,8 @@ AccessPoint:
   }    
 }  
 ```  
-#### AccessPoint NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un AccessPoint en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### AccessPoint NGSI-LDのキーバリューの例  
+ここでは、AccessPointをJSON-LD形式でkey-valuesにした例を紹介します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "ap_542",  
@@ -742,8 +742,8 @@ AccessPoint:
   ]  
 }  
 ```  
-#### AccessPoint NGSI-LD normalizado Ejemplo  
-Aquí hay un ejemplo de un AccessPoint en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### AccessPoint NGSI-LDの正規化例  
+ここでは、JSON-LD形式のAccessPointを正規化した例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "ap_542",  
@@ -877,4 +877,4 @@ AccessPoint:
   }  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。

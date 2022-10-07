@@ -1,13 +1,6 @@
 AccessPoint:
   description: 'This entity describes an Access Point which is a networking hardware that generates a wireless network and allows other Wi-Fi devices to connect to it'
   properties:
-    TimeInstant:
-      description: "[Timestamp](https://github.com/telefonicaid/iotagent-node-lib#TimeInstant) saved by FIWARE's IoT Agent. Note: This attribute has not been harmonized to keep backwards compatibility with current FIWARE reference implementations."
-      format: date-time
-      type: string
-      x-ngsi:
-        model: https://schema.org/DateTime
-        type: Property
     address:
       description: 'The mailing address'
       properties:
@@ -81,7 +74,7 @@ AccessPoint:
         model: https://schema.org/Number
         type: Property
     controlledProperty:
-      description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'''
+      description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'''
       items:
         enum:
           - airPollution
@@ -93,7 +86,6 @@ AccessPoint:
           - conductance
           - conductivity
           - depth
-          - eatingActivity
           - eatingActivity
           - electricityConsumption
           - energy
@@ -374,7 +366,7 @@ AccessPoint:
         type: Geoproperty
     macAddress:
       description: 'The MAC address of the device.'
-      pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$
+      pattern: ^([[A-Fa-f0-9]]{2}[:.-]?){5}[[A-Fa-f0-9]]{2}$
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -489,6 +481,13 @@ AccessPoint:
       x-ngsi:
         model: '3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket'
         type: Property
+    timeInstant:
+      description: 'Timestamp of the payload . There can be production environments where the attribute type is equal to the `ISO8601` string. If so, it must be considered as a synonym of `DateTime`. This attribute is kept for backwards compatibility with old FIWARE reference implementations.'
+      format: date-time
+      type: string
+      x-ngsi:
+        model: https://schema.org/Datetime
+        type: Property
     type:
       description: 'NGSI Entity type. It has to be AccessPoint'
       enum:
@@ -500,7 +499,10 @@ AccessPoint:
     - id
     - type
     - name
-    - address
-    - location
-    - clientsConnected
   type: object
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.WifiNetwork/blob/master/AccessPoint/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.WifiNetwork/AccessPoint/schema.json
+  x-model-tags: ""
+  x-version: 0.1.1

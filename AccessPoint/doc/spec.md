@@ -1,18 +1,32 @@
-Entity: AccessPoint  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: AccessPoint  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/AccessPoint/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **This entity describes an Access Point which is a networking hardware that generates a wireless network and allows other Wi-Fi devices to connect to it**  
 version: 0.1.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `apState`: Enum:'up, down'. Indicates whether the access point is working (value: up), or it is not working or shut down (value: down). Enum:'up, down'  - `areaServed`: The geographic area where a service or offered item is provided  - `category`: Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  - `clientsConnected`: Number of clients or users connected to the access point.  - `controlledProperty`: Anything that can be sensed, measured or controlled by. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateInstalled`: A timestamp which denotes when the device was installed (if it requires installation).  - `dateLastReboot`: A timestamp which denotes the last time when the device was successfully rebooted.  - `dateLastValueReported`: A timestamp which denotes the last time when the device successfully reported data to the cloud.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `email`: Email address of owner.  - `firmwareVersion`: The firmware version of this device.  - `hardwareVersion`: The hardware version of this device.  - `id`: Unique identifier of the entity  - `ipAddress`: The IP address of the device.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `macAddress`: The MAC address of the device.  - `modelName`: Device's model name.  - `name`: The name of this item.  - `osVersion`: The version of the host operating system device.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refPointOfInterest`: The point of interest where the access point is located and provides the service.  - `seeAlso`: list of uri pointing to additional resources about the item  - `serialNumber`: The serial number assigned by the manufacturer.  - `service`: This attribute is used to assign the access point to one or several municipal service departments that receive the wireless service. For example: Library, Museums, Social Services, Sports...  - `softwareVersion`: The software version of this device.  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ssid`: List of the names of the SSID (service set identifier) that the access point generates. One access point can generate one or several SSID.  - `supportedProtocol`: Supported protocol(s) or networks  - `timeInstant`: Timestamp of the payload . There can be production environments where the attribute type is equal to the `ISO8601` string. If so, it must be considered as a synonym of `DateTime`. This attribute is kept for backwards compatibility with old FIWARE reference implementations.  - `type`: NGSI Entity type. It has to be AccessPoint    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `apState[string]`: Enum:'up, down'. Indicates whether the access point is working (value: up), or it is not working or shut down (value: down). Enum:'up, down'  . Model: [http://schema.org/Text](http://schema.org/Text)- `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: Sensor: A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor. actuator : A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator. Meter : A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF. HVAC : Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC. Network : A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network. Multimedia : A device designed to display, store, record or play multimedia content such as audio, images, animation, video. Enum:'actuator, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'  . Model: [https://schema.org/Text](https://schema.org/Text)- `clientsConnected[number]`: Number of clients or users connected to the access point.  . Model: [https://schema.org/Number](https://schema.org/Number)- `controlledProperty[array]`: Anything that can be sensed, measured or controlled by. Enum:'airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateInstalled[string]`: A timestamp which denotes when the device was installed (if it requires installation).  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastReboot[string]`: A timestamp which denotes the last time when the device was successfully rebooted.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastValueReported[string]`: A timestamp which denotes the last time when the device successfully reported data to the cloud.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `email[string]`: Email address of owner.  - `firmwareVersion[string]`: The firmware version of this device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `hardwareVersion[string]`: The hardware version of this device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Unique identifier of the entity  - `ipAddress[string]`: The IP address of the device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `macAddress[string]`: The MAC address of the device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `modelName[string]`: Device's model name.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: The name of this item.  - `osVersion[string]`: The version of the host operating system device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refPointOfInterest[*]`: The point of interest where the access point is located and provides the service.  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `serialNumber[string]`: The serial number assigned by the manufacturer.  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `service[array]`: This attribute is used to assign the access point to one or several municipal service departments that receive the wireless service. For example: Library, Museums, Social Services, Sports...  . Model: [https://schema.org/Text](https://schema.org/Text)- `softwareVersion[string]`: The software version of this device.  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `ssid[array]`: List of the names of the SSID (service set identifier) that the access point generates. One access point can generate one or several SSID.  . Model: [https://schema.org/Text](https://schema.org/Text)- `supportedProtocol[array]`: Supported protocol(s) or networks  . Model: [3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket](3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket)- `timeInstant[string]`: Timestamp of the payload . There can be production environments where the attribute type is equal to the `ISO8601` string. If so, it must be considered as a synonym of `DateTime`. This attribute is kept for backwards compatibility with old FIWARE reference implementations.  . Model: [https://schema.org/Datetime](https://schema.org/Datetime)- `type[string]`: NGSI Entity type. It has to be AccessPoint  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `id`  - `name`  - `type`    
+- `id`  - `name`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 The access point can provide a wireless network in a building or a place (square, street, beach, garden...) modelated with a separated entity type [WifiPointOfInterest](../../WifiPointOfInterest/). This data model has been developed in cooperation   with the [Valencia City Hall](https://www.valencia.es).  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AccessPoint:    
@@ -91,7 +105,7 @@ AccessPoint:
         model: https://schema.org/Number    
         type: Property    
     controlledProperty:    
-      description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'''    
+      description: 'Anything that can be sensed, measured or controlled by. Enum:''airPollution, atmosphericPressure, averageVelocity, batteryLife, batterySupply, cdom, conductance, conductivity, depth, eatingActivity, electricityConsumption, energy, fillingLevel, freeChlorine, gasConsumption, gateOpening, heading, humidity, light, location, milking, motion, movementActivity, noiseLevel, occupancy, orp, pH, power, precipitation, pressure, refractiveIndex, salinity, smoke, soilMoisture, solarRadiation, speed, tds, temperature, trafficFlow, tss, turbidity, waterConsumption, waterFlow, waterLevel, waterPollution, weatherConditions, weight, windDirection, windSpeed'''    
       items:    
         enum:    
           - airPollution    
@@ -103,7 +117,6 @@ AccessPoint:
           - conductance    
           - conductivity    
           - depth    
-          - eatingActivity    
           - eatingActivity    
           - electricityConsumption    
           - energy    
@@ -384,7 +397,7 @@ AccessPoint:
         type: Geoproperty    
     macAddress:    
       description: 'The MAC address of the device.'    
-      pattern: ^([[:xdigit:]]{2}[:.-]?){5}[[:xdigit:]]{2}$    
+      pattern: ^([[A-Fa-f0-9]]{2}[:.-]?){5}[[A-Fa-f0-9]]{2}$    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -518,12 +531,22 @@ AccessPoint:
     - type    
     - name    
   type: object    
-  version: 0.1.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WifiNetwork/blob/master/AccessPoint/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.WifiNetwork/AccessPoint/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### AccessPoint NGSI-v2 key-values Example    
 Here is an example of a AccessPoint in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ap_542",  
@@ -573,8 +596,10 @@ AccessPoint:
   "source": "Cisco"  
 }  
 ```  
+</details>  
 #### AccessPoint NGSI-v2 normalized Example    
 Here is an example of a AccessPoint in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "ap_542",  
@@ -688,193 +713,204 @@ AccessPoint:
   }    
 }  
 ```  
+</details>  
 #### AccessPoint NGSI-LD key-values Example    
 Here is an example of a AccessPoint in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "ap_542",  
-  "type": "AccessPoint",  
-  "address": {  
-    "streetAddress": "Avda. Plata, 26",  
-    "addressLocality": "Valencia"  
-  },  
-  "apState": "up",  
-  "clientsConnected": 125,  
-  "name": "Bomberos_ParqueCentral_Planta_1",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -0.367589,  
-      39.454197  
+    "id": "ap_542",  
+    "type": "AccessPoint",  
+    "address": {  
+        "streetAddress": "Avda. Plata, 26",  
+        "addressLocality": "Valencia"  
+    },  
+    "apState": "up",  
+    "clientsConnected": 258,  
+    "contactPoint": "asistencia_tecnica_wifi@valencia.es",  
+    "dataProvider": "Airwave",  
+    "dateInstalled": "2019-01-01T00:00:00.00Z",  
+    "dateLastReboot": "2020-08-14T12:43:39.00Z",  
+    "dateLastValueReported": "2020-09-22T09:30:03.00Z",  
+    "description": "Situado en el Parque Central de Bomberos, planta 1",  
+    "firmwareVersion": "7.2.584.0",  
+    "hardwareVersion": "",  
+    "ipAddress": "192.14.56.78",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -0.367589,  
+            39.454197  
+        ]  
+    },  
+    "macAddress": "00:2E:89:25:78:05",  
+    "modelName": "Aironet 1000 LWAPP",  
+    "name": "Bomberos_ParqueCentral_Planta_1",  
+    "osVersion": "",  
+    "owner": [  
+        "Ayuntamiento_de_Valencia"  
+    ],  
+    "provider": "Cisco",  
+    "refPointOfInterest": "poi_226",  
+    "serialNumber": "KWC33301C44",  
+    "service": [  
+        "Bomberos"  
+    ],  
+    "softwareVersion": "",  
+    "source": "Cisco",  
+    "ssid": [  
+        "AVC",  
+        "wifivalencia"  
+    ],  
+    "timeInstant": "2020-09-22T09:30:03.00Z",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WifiNetwork/master/context.jsonld"  
     ]  
-  },  
-  "ssid": [  
-    "AVC",  
-    "wifivalencia"  
-  ],  
-  "clientsConnected": 258,  
-  "service": [  
-    "Bomberos"  
-  ],  
-  "refPointOfInterest": "poi_226",  
-  "timeInstant": "2020-09-22T09:30:03.00Z",  
-  "contactPoint": "asistencia_tecnica_wifi@valencia.es",  
-  "dataProvider": "Airwave",  
-  "dateInstalled": "2019-01-01T00:00:00.00Z",  
-  "dateLastReboot": "2020-08-14T12:43:39.00Z",  
-  "dateLastValueReported": "2020-09-22T09:30:03.00Z",  
-  "description": "Situado en el Parque Central de Bomberos, planta 1",  
-  "firmwareVersion": "7.2.584.0",  
-  "hardwareVersion": "",  
-  "ipAddress": "192.14.56.78",  
-  "macAddress": "00:2E:89:25:78:05",  
-  "modelName": "Aironet 1000 LWAPP",  
-  "osVersion": "",  
-  "owner": [  
-    "Ayuntamiento_de_Valencia"  
-  ],  
-  "provider": "Cisco",  
-  "serialNumber": "KWC33301C44",  
-  "softwareVersion": "",  
-  "source": "Cisco",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### AccessPoint NGSI-LD normalized Example    
 Here is an example of a AccessPoint in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "ap_542",  
-  "type": "AccessPoint",  
-  "address": {  
-    "type": "Property",  
-    "value": "Avda. Plata, 26. Valencia"  
-  },  
-  "apState": {  
-    "type": "Property",  
-    "value": "up"  
-  },  
-  "clientsConnected": {  
-    "type": "Property",  
-    "value": 125  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Bomberos_ParqueCentral_Planta_1"  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -0.367589,  
-        39.454197  
-      ]  
+    "id": "ap_542",  
+    "type": "AccessPoint",  
+    "address": {  
+        "type": "Property",  
+        "value": "Avda. Plata, 26. Valencia"  
+    },  
+    "apState": {  
+        "type": "Property",  
+        "value": "up"  
+    },  
+    "clientsConnected": {  
+        "type": "Property",  
+        "value": 125  
+    },  
+    "contactPoint": {  
+        "type": "Property",  
+        "value": "asistencia_tecnica_wifi@valencia.es"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Airwave"  
+    },  
+    "dateInstalled": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2019-01-01T00:00:00.00Z"  
+        }  
+    },  
+    "dateLastReboot": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-08-14T12:43:39.00Z"  
+        }  
+    },  
+    "dateLastValueReported": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-09-22T09:30:03.00Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Situado en el Parque Central de Bomberos, planta 1"  
+    },  
+    "firmwareVersion": {  
+        "type": "Property",  
+        "value": "7.2.584.0"  
+    },  
+    "hardwareVersion": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "ipAddress": {  
+        "type": "Property",  
+        "value": "192.14.56.78"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -0.367589,  
+                39.454197  
+            ]  
+        }  
+    },  
+    "macAddress": {  
+        "type": "Property",  
+        "value": "00:2E:89:25:78:05"  
+    },  
+    "modelName": {  
+        "type": "Property",  
+        "value": "Aironet 1000 LWAPP"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Bomberos_ParqueCentral_Planta_1"  
+    },  
+    "osVersion": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": "Ayuntamiento_de_Valencia"  
+    },  
+    "provider": {  
+        "type": "Property",  
+        "value": "Cisco"  
+    },  
+    "refPointOfInterest": {  
+        "type": "Relationship",  
+        "object": "poi_226"  
+    },  
+    "serialNumber": {  
+        "type": "Property",  
+        "value": "KWC33301C44"  
+    },  
+    "service": {  
+        "type": "Property",  
+        "value": [  
+            "Bomberos"  
+        ]  
+    },  
+    "softwareVersion": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Cisco"  
+    },  
+    "ssid": {  
+        "type": "Property",  
+        "value": [  
+            "AVC",  
+            "wifivalencia"  
+        ]  
+    },  
+    "timeInstant": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-09-22T09:30:03.00Z"  
+        }  
     }  
-  },  
-  "ssid": {  
-    "type": "Property",  
-    "value": [  
-      "AVC",  
-      "wifivalencia"  
-    ]  
-  },  
-  "service": {  
-    "type": "Property",  
-    "value": [  
-      "Bomberos"  
-    ]  
-  },  
-  "refPointOfInterest": {  
-    "type": "Relationship",  
-    "object": "poi_226"  
-  },  
-  "timeInstant": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-09-22T09:30:03.00Z"  
-    }  
-  },  
-  "contactPoint": {  
-    "type": "Property",  
-    "value": "asistencia_tecnica_wifi@valencia.es"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Airwave"  
-  },  
-  "dateInstalled": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2019-01-01T00:00:00.00Z"  
-    }  
-  },  
-  "dateLastReboot": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-08-14T12:43:39.00Z"  
-    }  
-  },  
-  "dateLastValueReported": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-09-22T09:30:03.00Z"  
-    }  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Situado en el Parque Central de Bomberos, planta 1"  
-  },  
-  "firmwareVersion": {  
-    "type": "Property",  
-    "value": "7.2.584.0"  
-  },  
-  "hardwareVersion": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "ipAddress": {  
-    "type": "Property",  
-    "value": "192.14.56.78"  
-  },  
-  "macAddress": {  
-    "type": "Property",  
-    "value": "00:2E:89:25:78:05"  
-  },  
-  "modelName": {  
-    "type": "Property",  
-    "value": "Aironet 1000 LWAPP"  
-  },  
-  "osVersion": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": "Ayuntamiento_de_Valencia"  
-  },  
-  "provider": {  
-    "type": "Property",  
-    "value": "Cisco"  
-  },  
-  "serialNumber": {  
-    "type": "Property",  
-    "value": "KWC33301C44"  
-  },  
-  "softwareVersion": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Cisco"  
-  }  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

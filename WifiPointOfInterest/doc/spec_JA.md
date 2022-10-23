@@ -1,18 +1,32 @@
-エンティティWifiPointOfInterest  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティWifiPointOfInterest  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/WifiPointOfInterest/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、無線ネットワークを持つPoint of Interestを表します**。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**このエンティティは、ワイヤレスネットワークを持つPoint of Interestを記述する**。  
 バージョン: 0.1.0  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `category`: このポイントオブインタレストのカテゴリー。許容される値。Factual taxonomy](https://github.com/Factual/places/blob/master/categories/factual_taxonomy.json)で定義されたものと、データモデルのユーザーが実装できる他のカテゴリー。  - `clientsConnected`: このポイントに接続しているクライアントまたはユーザーの数。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `email`: 所有者のEメールアドレス  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `service`: この属性は、ワイヤレスサービスを受ける1つまたは複数の自治体のサービス部門にアクセスポイントを割り当てるために使用されます。例えば、以下のようになります。図書館、博物館、ソーシャルサービス、スポーツ...。  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `timeInstant`: ペイロードのタイムスタンプ。本番環境では、属性タイプが `ISO8601` の文字列と同じである場合があります。その場合は、`DateTime` の同義語として考えなければなりません。この属性は、古いFIWAREリファレンスの実装との下位互換性のために残されています。  - `type`: NGSI Entity type. WifiPointOfInterestでなければなりません。  - `wifiStatus`: この場所で利用可能なワイヤレスネットワークがあるかどうかと、そのサービス内容を示します。許容される値は次のとおりです。noService」は対象地点にアクセスポイントが設置されていない場合、「working」は対象地点にアクセスポイントが設置されていて、そのすべてが動作している場合（up）、「totalFailure」は対象地点にアクセスポイントが設置されていて、そのすべてが動作していない場合（down）、「workingPartially」は対象地点にアクセスポイントが設置されていて、そのうちのいくつかが動作していて（up）、そのうちのいくつかが動作していない場合（down）。Enum:'noService, totalFailure, working, workingPartially' (ノーサービス、トータルフェイル、ワーキング、ワーキングパーリー)    
-必須項目  
-- `id`  - `type`    
-このデータモデルは、[Valencia City Hall](https://www.valencia.es)の協力を得て開発されました。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: この注目点のカテゴリ。許可された値。Factual taxonomy](https://github.com/Factual/places/blob/master/categories/factual_taxonomy.json)で定義されたものと、データモデルのユーザが実装できる他のカテゴリ。  . Model: [https://schema.org/Number](https://schema.org/Number)- `clientsConnected[number]`: このポイントに接続されているクライアントまたはユーザーの数。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `email[string]`: 所有者のEメールアドレス。  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `service[array]`: この属性は、無線サービスを受ける1つまたは複数の自治体サービス部門にアクセスポイントを割り当てるために使用されます。例えば図書館、博物館、社会福祉、スポーツ...  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `timeInstant[string]`: ペイロードのタイムスタンプ。実運用環境では、属性の型が `ISO8601` 文字列と等しい場合もあり得る。その場合、`DateTime` のシノニムと考える必要がある。この属性は、古いFIWAREリファレンスの実装との後方互換性のために残されている。  . Model: [https://schema.org/Datetime](https://schema.org/Datetime)- `type[string]`: NGSI Entity タイプ。WifiPointOfInterest である必要があります。  - `wifiStatus[string]`: この場所で利用可能な無線ネットワークがあるかどうか、およびそのサービスを示す。許容される値は次のとおりです。アクセスポイントが設置されていない場合は「noService」、アクセスポイントが設置されており、そのすべてが機能している場合は「working」、アクセスポイントが設置されており、そのすべてが機能していない場合は「totalFailure」（ダウン）、アクセスポイントが設置されており、その一部が機能しており（アップ）、その一部が機能していない（ダウン）場合は「workingPartially」（パーシャル）である。Enum:'noService, totalFailure, working, workingPartially'.  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、[バレンシア市役所](https://www.valencia.es)の協力を得て開発されたものです。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 WifiPointOfInterest:    
@@ -330,12 +344,22 @@ WifiPointOfInterest:
     - id    
     - type    
   type: object    
-  version: 0.1.0    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.WifiNetwork/blob/master/WifiPointOfInterest/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.WifiNetwork/WifiPointOfInterest/schema.json    
+  x-model-tags: ""    
+  x-version: 0.1.0    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### WifiPointOfInterest NGSI-v2 のキーバリューの例。  
-WifiPointOfInterestをkey-valuesとしてJSON-LD形式で出力した例です。これは、`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### WifiPointOfInterest NGSI-v2 key-value の例。  
+ここでは、WifiPointOfInterestをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "poi_226",  
@@ -360,8 +384,10 @@ WifiPointOfInterest:
   "source": ""  
 }  
 ```  
-#### WifiPointOfInterest NGSI-v2を正規化した例。  
-ここでは、正規化されたJSON-LD形式のWifiPointOfInterestの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### WifiPointOfInterest NGSI-v2 正規化例  
+以下は、WifiPointOfInterest を正規化した JSON-LD 形式の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "poi_226",  
@@ -426,109 +452,121 @@ WifiPointOfInterest:
   }  
 }  
 ```  
-#### WifiPointOfInterest NGSI-LDのキーバリューの例。  
-WifiPointOfInterestをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### WifiPointOfInterest NGSI-LD キー値例  
+ここでは、WifiPointOfInterestをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "poi_226",  
-  "type": "WifiPointOfInterest",  
-  "name": "Parque Central de Bomberos",  
-  "address": {  
-    "streetAddress": "Avda. Plata, 26. ",  
-    "addressLocality": "Valencia"  
-  },  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -0.367589,  
-      39.454197  
+    "id": "poi_226",  
+    "type": "WifiPointOfInterest",  
+    "address": {  
+        "streetAddress": "Avda. Plata, 26. ",  
+        "addressLocality": "Valencia"  
+    },  
+    "category": [  
+        "70-Servicios de Emergencia"  
+    ],  
+    "clientsConnected": 1563,  
+    "dataProvider": "B\u00fasqueda del nombre/direcci\u00f3n en google",  
+    "description": "Edificio del Parque Central de Bomberos",  
+    "email": "asistencia_tecnica_wifi@valencia.es",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -0.367589,  
+            39.454197  
+        ]  
+    },  
+    "name": "Parque Central de Bomberos",  
+    "service": [  
+        "Bomberos"  
+    ],  
+    "source": "",  
+    "timeInstant": "2020-09-22T09:30:03.00Z",  
+    "wifiStatus": "working",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.WifiNetwork/master/context.jsonld"  
     ]  
-  },  
-  "clientsConnected": 1563,  
-  "wifiStatus": "working",  
-  "service": [  
-    "Bomberos"  
-  ],  
-  "category": [  
-    "70-Servicios de Emergencia"  
-  ],  
-  "timeInstant": "2020-09-22T09:30:03.00Z",  
-  "email": "asistencia_tecnica_wifi@valencia.es",  
-  "dataProvider": "Búsqueda del nombre/dirección en google",  
-  "description": "Edificio del Parque Central de Bomberos",  
-  "source": "",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### WifiPointOfInterest NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のWifiPointOfInterestの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### WifiPointOfInterest NGSI-LD 正規化例  
+以下は、WifiPointOfInterestを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "poi_226",  
-  "type": "WifiPointOfInterest",  
-  "name": {  
-    "type": "Property",  
-    "value": "Parque Central de Bomberos"  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": "Avda. Plata, 26. Valencia"  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -0.367589,  
-        39.454197  
-      ]  
+    "id": "poi_226",  
+    "type": "WifiPointOfInterest",  
+    "TimeInstant": {  
+        "type": "DateTime",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2020-09-22T09:30:03.00Z"  
+        }  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": "Avda. Plata, 26. Valencia"  
+    },  
+    "category": {  
+        "type": "Property",  
+        "value": [  
+            "70-Servicios de Emergencia"  
+        ]  
+    },  
+    "clientsConnected": {  
+        "type": "Property",  
+        "value": 1563  
+    },  
+    "contactPoint": {  
+        "type": "Property",  
+        "value": "asistencia_tecnica_wifi@valencia.es"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "B\u00fasqueda del nombre/direcci\u00f3n en google"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Edificio del Parque Central de Bomberos"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -0.367589,  
+                39.454197  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Parque Central de Bomberos"  
+    },  
+    "service": {  
+        "type": "Property",  
+        "value": [  
+            "Bomberos"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "wifiStatus": {  
+        "type": "Property",  
+        "value": "working"  
     }  
-  },  
-  "clientsConnected": {  
-    "type": "Property",  
-    "value": 1563  
-  },  
-  "wifiStatus": {  
-    "type": "Property",  
-    "value": "working"  
-  },  
-  "service": {  
-    "type": "Property",  
-    "value": [  
-      "Bomberos"  
-    ]  
-  },  
-  "category": {  
-    "type": "Property",  
-    "value": [  
-      "70-Servicios de Emergencia"  
-    ]  
-  },  
-  "TimeInstant": {  
-    "type": "DateTime",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-09-22T09:30:03.00Z"  
-    }  
-  },  
-  "contactPoint": {  
-    "type": "Property",  
-    "value": "asistencia_tecnica_wifi@valencia.es"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Búsqueda del nombre/dirección en google"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Edificio del Parque Central de Bomberos"  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  }  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

@@ -59,7 +59,7 @@
         "value": "192.14.56.78"
     },
     "location": {
-        "type": "Geoproperty",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [

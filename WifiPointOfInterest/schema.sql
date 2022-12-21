@@ -1,0 +1,3 @@
+/* (Beta) Export of data model WifiPointOfInterest of the subject dataModel.WifiNetwork for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE WifiPointOfInterest_type AS ENUM ('WifiPointOfInterest');CREATE TYPE wifiStatus_type AS ENUM ('noService', 'totalFailure', 'working', 'workingPartially');
+CREATE TABLE WifiPointOfInterest (address json, alternateName text, areaServed text, category json, clientsConnected text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, email text, id text, location json, name text, owner json, seeAlso json, service json, source text, timeInstant timestamp, type WifiPointOfInterest_type, wifiStatus wifiStatus_type);

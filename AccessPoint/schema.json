@@ -47,7 +47,7 @@
                 },
                 "service": {
                     "type": "array",
-                    "description": "Property. Model:'https://schema.org/Text'. This attribute is used to assign the access point to one or several municipal service departments that receive the wireless service. For example: Library, Museums, Social Services, Sports..",
+                    "description": "Property. Model:'https://schema.org/Text'. This attribute is used to assign the access point to one or several municipal service departments that receive the wireless service. For example: Library, Museums, Social Services, Sports",
                     "items": {
                         "type": "string"
                     }

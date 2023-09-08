@@ -9,9 +9,17 @@
         "alternateName": "https://smartdatamodels.org/alternateName",
         "apState": "https://smartdatamodels.org/dataModel.WifiNetwork/apState",
         "areaServed": "https://smartdatamodels.org/areaServed",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "category": "https://smartdatamodels.org/dataModel.WifiNetwork/category",
         "clientsConnected": "https://smartdatamodels.org/dataModel.WifiNetwork/clientsConnected",
         "controlledProperty": "https://smartdatamodels.org/dataModel.WifiNetwork/controlledProperty",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateInstalled": "https://smartdatamodels.org/dataModel.WifiNetwork/dateInstalled",

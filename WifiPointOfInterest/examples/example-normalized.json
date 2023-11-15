@@ -6,8 +6,11 @@
     "value": "Parque Central de Bomberos"
   },
   "address": {
-    "type": "Text",
-    "value": "Avda. Plata, 26. Valencia"
+    "type": "StructuredValue",
+    "value": {
+      "addressLocality": "Valencia",
+      "streetAddress": "Avda. Plata, 26. "
+    }
   },
   "location": {
     "type": "geo:json",
@@ -28,13 +31,13 @@
     "value": "working"
   },
   "service": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "Bomberos"
     ]
   },
   "category": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "70-Servicios de Emergencia"
     ]
@@ -49,7 +52,7 @@
   },
   "dataProvider": {
     "type": "Text",
-    "value": "Búsqueda del nombre/dirección en google"
+    "value": "B\u00fasqueda del nombre/direcci\u00f3n en google"
   },
   "description": {
     "type": "Text",
@@ -60,4 +63,3 @@
     "value": ""
   }
 }
-

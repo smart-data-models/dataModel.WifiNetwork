@@ -1,6 +1,10 @@
 {
   "id": "ap_542",
   "type": "AccessPoint",
+  "email": {
+    "type": "Text", 
+    "value": "asistencia_tecnica_wifi@valencia.es"
+  },
   "address": {
     "type": "StructuredValue",
     "value": {

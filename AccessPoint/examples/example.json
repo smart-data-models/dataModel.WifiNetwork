@@ -22,6 +22,7 @@
   "service": [
     "Bomberos"
   ],
+  "email": "asistencia_tecnica_wifi@valencia.es",
   "refPointOfInterest": "poi_226",
   "timeInstant": "2020-09-22T09:30:03.00Z",
   "dataProvider": "Airwave",

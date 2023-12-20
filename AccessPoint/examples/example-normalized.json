@@ -51,10 +51,6 @@
     "type": "DateTime",
     "value": "2020-09-22T09:30:03.00Z"
   },
-  "contactPoint": {
-    "type": "Text",
-    "value": "asistencia_tecnica_wifi@valencia.es"
-  },
   "dataProvider": {
     "type": "Text",
     "value": "Airwave"
@@ -104,10 +100,6 @@
     "value": [
       "Ayuntamiento_de_Valencia"
     ]
-  },
-  "provider": {
-    "type": "Text",
-    "value": "Cisco"
   },
   "serialNumber": {
     "type": "Text",

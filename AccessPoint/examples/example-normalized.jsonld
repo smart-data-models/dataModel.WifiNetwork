@@ -1,6 +1,10 @@
 {
     "id": "ap_542",
     "type": "AccessPoint",
+    "email": {
+        "type": "Property", 
+        "value": "asistencia_tecnica_wifi@valencia.es"
+    },
     "address": {
         "type": "Property",
         "value": "Avda. Plata, 26. Valencia"

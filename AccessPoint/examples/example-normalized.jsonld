@@ -13,10 +13,6 @@
         "type": "Property",
         "value": 125
     },
-    "contactPoint": {
-        "type": "Property",
-        "value": "asistencia_tecnica_wifi@valencia.es"
-    },
     "dataProvider": {
         "type": "Property",
         "value": "Airwave"
@@ -87,10 +83,6 @@
     "owner": {
         "type": "Property",
         "value": "Ayuntamiento_de_Valencia"
-    },
-    "provider": {
-        "type": "Property",
-        "value": "Cisco"
     },
     "refPointOfInterest": {
         "type": "Relationship",

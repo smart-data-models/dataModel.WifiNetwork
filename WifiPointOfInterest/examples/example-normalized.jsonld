@@ -1,7 +1,7 @@
 {
     "id": "poi_226",
     "type": "WifiPointOfInterest",
-    "TimeInstant": {
+    "timeInstant": {
         "type": "DateTime",
         "value": {
             "@type": "DateTime",
@@ -22,7 +22,7 @@
         "type": "Property",
         "value": 1563
     },
-    "contactPoint": {
+    "email": {
         "type": "Property",
         "value": "asistencia_tecnica_wifi@valencia.es"
     },

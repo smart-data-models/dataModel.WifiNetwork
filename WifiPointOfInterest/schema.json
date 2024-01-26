@@ -25,7 +25,7 @@
                 "clientsConnected": {
                     "type": "number",
                     "minimum": 0,
-                    "description": "Property. Model:'https://schema.org/Number'. Number of clients or users connected in this point of interest."
+                    "description": "Property. Model:'https://schema.org/Number'. Number of clients or users connected in this point of interest"
                 },
                 "wifiStatus": {
                     "type": "string",
@@ -39,7 +39,7 @@
                 },
                 "service": {
                     "type": "array",
-                    "description": "Property. Model:'https://schema.org/Number'. This attribute is used to assign the access point to one or several municipal service departments that receive the wireless service. For example: Library, Museums, Social Services, Sports...",
+                    "description": "Property. Model:'https://schema.org/Number'. This attribute is used to assign the access point to one or several municipal service departments that receive the wireless service. For example: Library, Museums, Social Services, Sports",
                     "items": {
                         "type": "string"
                     }
@@ -49,7 +49,7 @@
                 },
                 "category": {
                     "type": "array",
-                    "description": "Property. Model:'https://schema.org/Number'. Category of this point of interest. Allowed values: Those defined by the [Factual taxonomy](https://github.com/Factual/places/blob/master/categories/factual_taxonomy.json) together with other categories that the user of the data model may implement.",
+                    "description": "Property. Model:'https://schema.org/Number'. Category of this point of interest. Allowed values: Those defined by the [Factual taxonomy](https://github.com/Factual/places/blob/master/categories/factual_taxonomy.json) together with other categories that the user of the data model may implement",
                     "items": {
                         "type": "string"
                     }

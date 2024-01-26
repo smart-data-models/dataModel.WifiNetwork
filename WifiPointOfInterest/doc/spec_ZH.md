@@ -1,37 +1,37 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entità: WifiPointOfInterest  
-===========================<!-- /10-Header -->  
+实体WifiPointOfInterest  
+=====================<!-- /10-Header -->  
 <!-- 15-License -->  
-[Licenza aperta](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/WifiPointOfInterest/LICENSE.md)  
-[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[开放许可](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/WifiPointOfInterest/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descrizione globale: **Questa entità descrive un punto di interesse che dispone di una rete wireless**.  
-versione: 0.1.0  
+全局描述：**该实体描述了拥有无线网络的兴趣点**  
+版本： 0.1.0  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## Elenco delle proprietà  
+## 属性列表  
 
-<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
-	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: Categoria di questo punto di interesse. Valori ammessi: Quelli definiti dalla [tassonomia Factual](https://github.com/Factual/places/blob/master/categories/factual_taxonomy.json) insieme ad altre categorie che l'utente del modello di dati può implementare.  . Model: [https://schema.org/Number](https://schema.org/Number)- `clientsConnected[number]`: Numero di client o utenti collegati in questo punto di interesse  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `email[idn-email]`: Indirizzo e-mail del proprietario  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `service[array]`: Questo attributo viene utilizzato per assegnare il punto di accesso a uno o più servizi comunali che ricevono il servizio wireless. Ad esempio: Biblioteca, Musei, Servizi sociali, Sport  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `timeInstant[date-time]`: Timestamp del payload . Possono esistere ambienti di produzione in cui il tipo di attributo è uguale alla stringa `ISO8601`. In tal caso, deve essere considerato come un sinonimo di `DateTime`. Questo attributo viene mantenuto per la compatibilità con le vecchie implementazioni di riferimento FIWARE.  . Model: [https://schema.org/Datetime](https://schema.org/Datetime)- `type[string]`: Tipo di entità NGSI. deve essere WifiPointOfInterest.  - `wifiStatus[string]`: Indica se in questa località è disponibile una rete wireless e il servizio che fornisce. I valori ammessi sono: 'noService' quando il punto di interesse non ha punti di accesso installati, 'working' quando il punto di interesse ha punti di accesso installati e tutti funzionanti (up), 'totalFailure' quando il punto di interesse ha punti di accesso installati e tutti non funzionanti (down) e 'workingPartially' quando il punto di interesse ha punti di accesso installati e alcuni funzionanti (up) e altri no (down). Enum:'noService, totalFailure, working, workingPartially'.  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: 该兴趣点的类别。允许值：由[事实分类](https://github.com/Factual/places/blob/master/categories/factual_taxonomy.json)定义的类别，以及数据模型用户可能实现的其他类别  . Model: [https://schema.org/Number](https://schema.org/Number)- `clientsConnected[number]`: 该兴趣点连接的客户或用户数量  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `email[idn-email]`: 所有者的电子邮件地址  - `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `service[array]`: 该属性用于将接入点分配给接受无线服务的一个或多个市政服务部门。例如图书馆、博物馆、社会服务、体育  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `timeInstant[date-time]`: 有效载荷的时间戳。在生产环境中，属性类型可能等同于 `ISO8601`字符串。如果是这样，则必须将其视为 `DateTime` 的同义词。保留该属性是为了向后兼容旧的 FIWARE 参考实现。  . Model: [https://schema.org/Datetime](https://schema.org/Datetime)- `type[string]`: 必须是 WifiPointOfInterest。  - `wifiStatus[string]`: 表示该地点是否有无线网络及其提供的服务。允许的值有noService "表示兴趣点没有安装接入点；"working "表示兴趣点安装了接入点，且所有接入点都能正常工作（正常）；"totalFailure "表示兴趣点安装了接入点，但所有接入点都不能正常工作（故障）；"workingPartially "表示兴趣点安装了接入点，其中一些能正常工作（正常），另一些不能正常工作（故障）。枚举："无服务、全部故障、工作、部分工作  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-Proprietà richieste  
+所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Questo modello di dati è stato sviluppato in collaborazione con il [Comune di Valencia] (https://www.valencia.es).  
+该数据模型是与[巴伦西亚市政厅](https://www.valencia.es)合作开发的。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Modello di dati descrizione delle proprietà  
-Ordinati in ordine alfabetico (clicca per i dettagli)  
+## 属性的数据模型描述  
+按字母顺序排列（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -421,9 +421,9 @@ WifiPointOfInterest:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Esempi di payload  
-#### WifiPointOfInterest Valori chiave NGSI-v2 Esempio  
-Ecco un esempio di WifiPointOfInterest in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+## 有效载荷示例  
+#### WifiPointOfInterest NGSI-v2 键值示例  
+下面是一个以 JSON-LD 格式作为键值的 WifiPointOfInterest 示例。当使用 `options=keyValues` 时，这与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -450,8 +450,8 @@ WifiPointOfInterest:
 }  
 ```  
 </details>  
-#### WifiPointOfInterest NGSI-v2 normalizzato Esempio  
-Ecco un esempio di WifiPointOfInterest in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+#### WifiPointOfInterest NGSI-v2 标准化示例  
+下面是一个 WifiPointOfInterest 的示例，格式为规范化的 JSON-LD。在不使用选项的情况下，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -518,8 +518,8 @@ WifiPointOfInterest:
 }  
 ```  
 </details>  
-#### WifiPointOfInterest Valori chiave NGSI-LD Esempio  
-Ecco un esempio di WifiPointOfInterest in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+#### WifiPointOfInterest NGSI-LD 键值示例  
+下面是一个以 JSON-LD 格式作为键值的 WifiPointOfInterest 示例。当使用 `options=keyValues` 时，这与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -556,8 +556,8 @@ WifiPointOfInterest:
 }  
 ```  
 </details>  
-#### WifiPointOfInterest NGSI-LD normalizzato Esempio  
-Ecco un esempio di WifiPointOfInterest in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+#### WifiPointOfInterest NGSI-LD 归一化示例  
+下面是一个 WifiPointOfInterest 的示例，格式为规范化的 JSON-LD。在不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -630,7 +630,7 @@ WifiPointOfInterest:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

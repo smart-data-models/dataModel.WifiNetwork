@@ -6,7 +6,7 @@
     "addressLocality": "Valencia"
   },
   "apState": "up",
-  "clientsConnected": 125,
+  "clientsConnected": 258,
   "name": "Bomberos_ParqueCentral_Planta_1",
   "location": {
     "type": "Point",
@@ -19,13 +19,12 @@
     "AVC",
     "wifivalencia"
   ],
-  "clientsConnected": 258,
   "service": [
     "Bomberos"
   ],
+  "email": "asistencia_tecnica_wifi@valencia.es",
   "refPointOfInterest": "poi_226",
   "timeInstant": "2020-09-22T09:30:03.00Z",
-  "contactPoint": "asistencia_tecnica_wifi@valencia.es",
   "dataProvider": "Airwave",
   "dateInstalled": "2019-01-01T00:00:00.00Z",
   "dateLastReboot": "2020-08-14T12:43:39.00Z",
@@ -40,7 +39,6 @@
   "owner": [
     "Ayuntamiento_de_Valencia"
   ],
-  "provider": "Cisco",
   "serialNumber": "KWC33301C44",
   "softwareVersion": "",
   "source": "Cisco"

@@ -1,35 +1,35 @@
 <!-- 10-Header -->    
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)    
-Entità: AccessPoint    
-===================<!-- /10-Header -->    
+实体：AccessPoint    
+==============<!-- /10-Header -->    
 <!-- 15-License -->    
-[Licenza aperta](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/AccessPoint/LICENSE.md)    
-[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
+[开放许可](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/AccessPoint/LICENSE.md)    
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
 <!-- /15-License -->    
 <!-- 20-Description -->    
-Descrizione globale: **Questa entità descrive un Access Point che è un hardware di rete che genera una rete wireless e consente ad altri dispositivi Wi-Fi di connettersi ad essa**.    
-versione: 0.1.1    
+全局描述：**该实体描述了接入点（Access Point），它是一种网络硬件，可生成无线网络并允许其他 Wi-Fi 设备与其连接**。    
+版本： 0.1.1    
 <!-- /20-Description -->    
 <!-- 30-PropertiesList -->    
-## Elenco delle proprietà    
-<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.    
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
-	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni Paesi, è gestita dal governo locale.      
-	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
-	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
-	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
-- `alternateName[string]`: Un nome alternativo per questa voce  - `apState[string]`: Enum:'up, down'. Indica se il punto di accesso sta funzionando (valore: up), oppure se non funziona o è spento (valore: down). Enum:'up, down'  . Model: [http://schema.org/Text](http://schema.org/Text)- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: Sensore: Dispositivo che rileva e risponde a eventi o cambiamenti nell'ambiente fisico, come luce, movimento o variazioni di temperatura. https://w3id.org/saref#Sensor. Attuatore: Dispositivo responsabile del movimento o del controllo di un meccanismo o di un sistema. https://w3id.org/saref#Actuator. Misuratore : Dispositivo costruito per rilevare con precisione e visualizzare una quantità in una forma leggibile da un essere umano. Parzialmente definito da SAREF. HVAC : Dispositivo di riscaldamento, ventilazione e condizionamento dell'aria (HVAC) che fornisce il comfort ambientale interno. https://w3id.org/saref#HVAC. Rete : Dispositivo utilizzato per collegare altri dispositivi in una rete, come hub, switch o router in una rete LAN o Sensor. (https://w3id.org/saref#Network. Multimedia : Dispositivo progettato per visualizzare, memorizzare, registrare o riprodurre contenuti multimediali come audio, immagini, animazioni, video. Enum:'attuatore, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. La categoria grezza sarà deprecata. Utilizzare invece deviceCategory per evitare conflitti con altri aqttributi denominati categoria.  . Model: [https://schema.org/Text](https://schema.org/Text)- `clientsConnected[number]`: Numero di client o utenti collegati al punto di accesso  . Model: [https://schema.org/Number](https://schema.org/Number)- `controlledProperty[array]`: Qualsiasi cosa che possa essere percepita, misurata o controllata. Enum:Inquinamento atmosferico, Pressione atmosferica, Velocità media, Durata della batteria, Alimentazione della batteria, Conduttanza, Conduttività, Profondità, AlimentazioneAttività, Consumo di elettricità, Energia, Livello di riempimento, Cloro libero, Consumo di gas, Apertura del cancello, Direzione, Umidità, Luce, Posizione, Mungitura, Movimento, MovimentoAttività, rumore, occupazione, orp, pH, potenza, precipitazione, pressione, indice di rifrazione, salinità, fumo, umidità del suolo, radiazione solare, velocità, tds, temperatura, flusso di traffico, tss, torbidità, consumo d'acqua, flusso d'acqua, livello d'acqua, inquinamento idrico, condizioni meteorologiche, peso, direzione del vento, velocità del vento".  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateInstalled[date-time]`: Un timestamp che indica quando il dispositivo è stato installato (se richiede l'installazione)  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastReboot[date-time]`: Un timestamp che indica l'ultima volta che il dispositivo è stato riavviato con successo.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastValueReported[date-time]`: Un timestamp che indica l'ultima volta in cui il dispositivo ha comunicato con successo i dati al cloud.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `deviceCategory[array]`: Sensore: Dispositivo che rileva e risponde a eventi o cambiamenti nell'ambiente fisico, come luce, movimento o variazioni di temperatura. https://w3id.org/saref#Sensor. Attuatore: Dispositivo responsabile del movimento o del controllo di un meccanismo o di un sistema. https://w3id.org/saref#Actuator. Misuratore : Dispositivo costruito per rilevare con precisione e visualizzare una quantità in una forma leggibile da un essere umano. Parzialmente definito da SAREF. HVAC : Dispositivo di riscaldamento, ventilazione e condizionamento dell'aria (HVAC) che fornisce il comfort ambientale interno. https://w3id.org/saref#HVAC. Rete : Dispositivo utilizzato per collegare altri dispositivi in una rete, come hub, switch o router in una rete LAN o Sensor. (https://w3id.org/saref#Network. Multimedia : Dispositivo progettato per visualizzare, memorizzare, registrare o riprodurre contenuti multimediali come audio, immagini, animazioni, video. Enum:'attuatore, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. La categoria grezza sarà deprecata. Utilizzare invece deviceCategory per evitare conflitti con altri aqttributi denominati categoria.  . Model: [https://schema.org/Text](https://schema.org/Text)- `email[idn-email]`: Indirizzo e-mail del proprietario  - `firmwareVersion[string]`: La versione del firmware di questo dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `hardwareVersion[string]`: La versione hardware del dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificatore univoco dell'entità  - `ipAddress[string]`: L'indirizzo IP del dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `macAddress[string]`: L'indirizzo MAC del dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `modelName[string]`: Nome del modello del dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Il nome di questo elemento  - `osVersion[string]`: La versione del dispositivo del sistema operativo host  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `refPointOfInterest[*]`: Il punto di interesse in cui si trova il punto di accesso e che fornisce il servizio  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `serialNumber[string]`: Il numero di serie assegnato dal produttore  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `service[array]`: Questo attributo viene utilizzato per assegnare il punto di accesso a uno o più servizi comunali che ricevono il servizio wireless. Ad esempio: Biblioteca, Musei, Servizi sociali, Sport  . Model: [https://schema.org/Text](https://schema.org/Text)- `softwareVersion[string]`: La versione del software di questo dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `ssid[array]`: Elenco dei nomi degli SSID (service set identifier) generati dal punto di accesso. Un punto d'accesso può generare uno o più SSID.  . Model: [https://schema.org/Text](https://schema.org/Text)- `supportedProtocol[array]`: Protocolli o reti supportati  . Model: [3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket](3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket)- `timeInstant[date-time]`: Timestamp del payload . Possono esistere ambienti di produzione in cui il tipo di attributo è uguale alla stringa `ISO8601`. In tal caso, deve essere considerato come un sinonimo di `DateTime`. Questo attributo viene mantenuto per la compatibilità con le vecchie implementazioni di riferimento FIWARE.  . Model: [https://schema.org/Datetime](https://schema.org/Datetime)- `type[string]`: Tipo di entità NGSI. Deve essere AccessPoint  <!-- /30-PropertiesList -->    
+## 属性列表    
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。    
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理      
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
+- `alternateName[string]`: 该项目的替代名称  - `apState[string]`: 枚举：'up, down'。表示接入点是否在工作（值： up），或不工作或关闭（值： down）。枚举:'up, down  . Model: [http://schema.org/Text](http://schema.org/Text)- `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: 传感器：https://w3id.org/saref#Sensor. 执行器：负责移动或控制机械装置或系统的装置。https://w3id.org/saref#Actuator.Meter （仪表）： 以人类可读取的形式准确检测和显示数量的装置。部分由 SAREF 定义。暖通空调（HVAC）：提供室内环境舒适度的供暖、通风和空调设备。https://w3id.org/saref#HVAC。网络：用于连接网络中其他设备的设备，如局域网或传感器网络中的集线器、交换机或路由器。（https://w3id.org/saref#Network.多媒体：用于显示、存储、录制或播放音频、图像、动画、视频等多媒体内容的设备。枚举：'致动器、信标、末端枪、暖通空调、实施、非理性分段、非理性系统、仪表、多媒体、网络、传感器'。Raw category（原始类别）将被弃用，请使用 deviceCategory（设备类别），以避免与其他名为 category 的 aqttributes（属性）冲突。  . Model: [https://schema.org/Text](https://schema.org/Text)- `clientsConnected[number]`: 连接到接入点的客户端或用户数量  . Model: [https://schema.org/Number](https://schema.org/Number)- `controlledProperty[array]`: 任何可以感知、测量或控制的事物。枚举空气污染、大气压力、平均速度、电池寿命、电池供应、cdom、电导、电导率、深度、进食活动、电力消耗、能量、填充水平、游离氯、气体消耗、闸门开启、航向、湿度、光线、位置、挤奶、运动、移动活动、噪音水平、占用率、orp、pH 值、功率、降水量、压力、折射指数、盐度、烟雾、土壤湿度、太阳辐射、速度、tds、温度、交通流量、tss、浊度、耗水量、水流量、水位、水污染、天气条件、重量、风向、风速'。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateInstalled[date-time]`: 表示设备安装时间的时间戳（如果需要安装的话）  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastReboot[date-time]`: 时间戳，表示上次成功重启设备的时间  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastValueReported[date-time]`: 时间戳，表示设备最后一次成功向云报告数据的时间  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `deviceCategory[array]`: 传感器：https://w3id.org/saref#Sensor. 执行器：负责移动或控制机械装置或系统的装置。https://w3id.org/saref#Actuator.Meter （仪表）： 以人类可读取的形式准确检测和显示数量的装置。部分由 SAREF 定义。暖通空调（HVAC）：提供室内环境舒适度的供暖、通风和空调设备。https://w3id.org/saref#HVAC。网络：用于连接网络中其他设备的设备，如局域网或传感器网络中的集线器、交换机或路由器。（https://w3id.org/saref#Network.多媒体：用于显示、存储、录制或播放音频、图像、动画、视频等多媒体内容的设备。枚举：'致动器、信标、末端枪、暖通空调、实施、非理性分段、非理性系统、仪表、多媒体、网络、传感器'。Raw category（原始类别）将被弃用，请使用 deviceCategory（设备类别），以避免与其他名为 category 的 aqttributes（属性）冲突。  . Model: [https://schema.org/Text](https://schema.org/Text)- `email[idn-email]`: 所有者的电子邮件地址  - `firmwareVersion[string]`: 该设备的固件版本  . Model: [https://schema.org/Text](https://schema.org/Text)- `hardwareVersion[string]`: 该设备的硬件版本  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 实体的唯一标识符  - `ipAddress[string]`: 设备的 IP 地址  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `macAddress[string]`: 设备的 MAC 地址  . Model: [https://schema.org/Text](https://schema.org/Text)- `modelName[string]`: 设备型号名称  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: 该项目的名称  - `osVersion[string]`: 主机操作系统设备的版本  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `refPointOfInterest[*]`: 接入点所在并提供服务的兴趣点  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `serialNumber[string]`: 制造商分配的序列号  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `service[array]`: 该属性用于将接入点分配给接受无线服务的一个或多个市政服务部门。例如图书馆、博物馆、社会服务、体育  . Model: [https://schema.org/Text](https://schema.org/Text)- `softwareVersion[string]`: 设备的软件版本  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `ssid[array]`: 接入点生成的 SSID（服务集标识符）名称列表。一个接入点可生成一个或多个 SSID  . Model: [https://schema.org/Text](https://schema.org/Text)- `supportedProtocol[array]`: 支持的协议或网络  . Model: [3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket](3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket)- `timeInstant[date-time]`: 有效载荷的时间戳。在生产环境中，属性类型可能等同于 `ISO8601`字符串。如果是这样，则必须将其视为 `DateTime` 的同义词。保留该属性是为了向后兼容旧的 FIWARE 参考实现。  . Model: [https://schema.org/Datetime](https://schema.org/Datetime)- `type[string]`: NGSI 实体类型。必须是 AccessPoint  <!-- /30-PropertiesList -->    
 <!-- 35-RequiredProperties -->    
-Proprietà richieste    
+所需属性    
 - `id`  - `name`  - `type`  <!-- /35-RequiredProperties -->    
 <!-- 40-RequiredProperties -->    
-Il punto di accesso può fornire una rete wireless in un edificio o in un luogo (piazza, strada, spiaggia, giardino...) modellato con un tipo di entità separata [WifiPointOfInterest](../../WifiPointOfInterest/). Questo modello di dati è stato sviluppato in collaborazione con il [Comune di Valencia] (https://www.valencia.es).    
+接入点可在建筑物或场所（广场、街道、海滩、花园......）内提供无线网络，并以独立的实体类型 [WifiPointOfInterest](../../WifiPointOfInterest/) 进行建模。该数据模型是与[瓦伦西亚市政厅](https://www.valencia.es)合作开发的。    
 <!-- /40-RequiredProperties -->    
 <!-- 50-DataModelHeader -->    
-## Modello di dati descrizione delle proprietà    
-Ordinati in ordine alfabetico (clicca per i dettagli)    
+## 属性的数据模型描述    
+按字母顺序排列（点击查看详情）    
 <!-- /50-DataModelHeader -->    
 <!-- 60-ModelYaml -->    
 <details><summary><strong>full yaml details</strong></summary>      
@@ -632,9 +632,9 @@ AccessPoint:
 <!-- 70-MiddleNotes -->    
 <!-- /70-MiddleNotes -->    
 <!-- 80-Examples -->    
-## Esempi di payload    
-#### AccessPoint NGSI-v2 Valori chiave Esempio    
-Ecco un esempio di AccessPoint in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.    
+## 有效载荷示例    
+#### AccessPoint NGSI-v2 键值示例    
+下面是一个以 JSON-LD 格式作为键值的 AccessPoint 示例。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -685,8 +685,8 @@ AccessPoint:
 }  
 ```  
 </details>    
-#### AccessPoint NGSI-v2 normalizzato Esempio    
-Ecco un esempio di AccessPoint in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.    
+#### AccessPoint NGSI-v2 标准化示例    
+下面是一个规范化 JSON-LD 格式 AccessPoint 的示例。当不使用选项时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -815,8 +815,8 @@ AccessPoint:
 }  
 ```  
 </details>    
-#### AccessPoint NGSI-LD valori chiave Esempio    
-Ecco un esempio di AccessPoint in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.    
+#### AccessPoint NGSI-LD 键值示例    
+下面是一个以 JSON-LD 格式作为键值的 AccessPoint 示例。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -870,8 +870,8 @@ AccessPoint:
 }  
 ```  
 </details>    
-#### AccessPoint NGSI-LD normalizzato Esempio    
-Ecco un esempio di AccessPoint in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.    
+#### AccessPoint NGSI-LD 标准化示例    
+下面是一个规范化 JSON-LD 格式 AccessPoint 的示例。当不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -1010,7 +1010,7 @@ AccessPoint:
 <!-- 90-FooterNotes -->    
 <!-- /90-FooterNotes -->    
 <!-- 95-Units -->    
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.    
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。    
 <!-- /95-Units -->    
 <!-- 97-LastFooter -->    
 ---    

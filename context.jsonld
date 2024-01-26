@@ -1,12 +1,25 @@
 {
     "@context": {
+        "AccessPoint": "https://smartdatamodels.org/dataModel.WifiNetwork/AccessPoint",
+        "WifiPointOfInterest": "https://smartdatamodels.org/dataModel.WifiNetwork/WifiPointOfInterest",
         "address": "https://smartdatamodels.org/address",
+        "addressCountry": "https://smartdatamodels.org/addressCountry",
+        "addressLocality": "https://smartdatamodels.org/addressLocality",
+        "addressRegion": "https://smartdatamodels.org/addressRegion",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "apState": "https://smartdatamodels.org/dataModel.WifiNetwork/apState",
         "areaServed": "https://smartdatamodels.org/areaServed",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "category": "https://smartdatamodels.org/dataModel.WifiNetwork/category",
         "clientsConnected": "https://smartdatamodels.org/dataModel.WifiNetwork/clientsConnected",
         "controlledProperty": "https://smartdatamodels.org/dataModel.WifiNetwork/controlledProperty",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateInstalled": "https://smartdatamodels.org/dataModel.WifiNetwork/dateInstalled",
@@ -14,6 +27,8 @@
         "dateLastValueReported": "https://smartdatamodels.org/dataModel.WifiNetwork/dateLastValueReported",
         "dateModified": "https://smartdatamodels.org/dateModified",
         "description": "http://purl.org/dc/terms/description",
+        "deviceCategory": "https://smartdatamodels.org/dataModel.WifiNetwork/deviceCategory",
+        "district": "https://smartdatamodels.org/district",
         "email": "https://smartdatamodels.org/email",
         "firmwareVersion": "https://smartdatamodels.org/dataModel.WifiNetwork/firmwareVersion",
         "hardwareVersion": "https://smartdatamodels.org/dataModel.WifiNetwork/hardwareVersion",
@@ -26,6 +41,8 @@
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "osVersion": "https://smartdatamodels.org/dataModel.WifiNetwork/osVersion",
         "owner": "https://smartdatamodels.org/owner",
+        "postOfficeBoxNumber": "https://smartdatamodels.org/postOfficeBoxNumber",
+        "postalCode": "https://smartdatamodels.org/postalCode",
         "refPointOfInterest": "https://smartdatamodels.org/dataModel.WifiNetwork/refPointOfInterest",
         "seeAlso": "https://smartdatamodels.org/seeAlso",
         "serialNumber": "https://smartdatamodels.org/dataModel.WifiNetwork/serialNumber",
@@ -33,6 +50,8 @@
         "softwareVersion": "https://smartdatamodels.org/dataModel.WifiNetwork/softwareVersion",
         "source": "https://smartdatamodels.org/source",
         "ssid": "https://smartdatamodels.org/dataModel.WifiNetwork/ssid",
+        "streetAddress": "https://smartdatamodels.org/streetAddress",
+        "streetNr": "https://smartdatamodels.org/streetNr",
         "supportedProtocol": "https://smartdatamodels.org/dataModel.WifiNetwork/supportedProtocol",
         "timeInstant": "https://smartdatamodels.org/timeInstant",
         "type": "@type",

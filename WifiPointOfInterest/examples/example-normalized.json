@@ -6,8 +6,11 @@
     "value": "Parque Central de Bomberos"
   },
   "address": {
-    "type": "Text",
-    "value": "Avda. Plata, 26. Valencia"
+    "type": "StructuredValue",
+    "value": {
+      "addressLocality": "Valencia",
+      "streetAddress": "Avda. Plata, 26. "
+    }
   },
   "location": {
     "type": "geo:json",
@@ -28,28 +31,28 @@
     "value": "working"
   },
   "service": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "Bomberos"
     ]
   },
   "category": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "70-Servicios de Emergencia"
     ]
   },
-  "TimeInstant": {
+  "timeInstant": {
     "type": "DateTime",
     "value": "2020-09-22T09:30:03.00Z"
   },
-  "contactPoint": {
+  "email": {
     "type": "Text",
     "value": "asistencia_tecnica_wifi@valencia.es"
   },
   "dataProvider": {
     "type": "Text",
-    "value": "Búsqueda del nombre/dirección en google"
+    "value": "B\u00fasqueda del nombre/direcci\u00f3n en google"
   },
   "description": {
     "type": "Text",
@@ -61,4 +64,3 @@
   },
   "@context": ["https://raw.githubusercontent.com/smart-data-models/dataModel.WifiNetwork/master/context.jsonld"]
 }
-

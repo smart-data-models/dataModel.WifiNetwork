@@ -1,35 +1,36 @@
 <!-- 10-Header -->    
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)    
-Entità: AccessPoint    
-===================<!-- /10-Header -->    
+엔티티: 액세스 포인트    
+============<!-- /10-Header -->    
 <!-- 15-License -->    
-[Licenza aperta](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/AccessPoint/LICENSE.md)    
-[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
+[오픈 라이선스](https://github.com/smart-data-models//dataModel.WifiNetwork/blob/master/AccessPoint/LICENSE.md)    
+[문서 자동 생성](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
 <!-- /15-License -->    
 <!-- 20-Description -->    
-Descrizione globale: **Questa entità descrive un Access Point che è un hardware di rete che genera una rete wireless e consente ad altri dispositivi Wi-Fi di connettersi ad essa**.    
-versione: 0.1.1    
+글로벌 설명: **이 엔티티는 무선 네트워크를 생성하고 다른 Wi-Fi 장치가 연결할 수 있도록 하는 네트워킹 하드웨어인 액세스 포인트를 설명합니다**.    
+버전: 0.1.1    
 <!-- /20-Description -->    
 <!-- 30-PropertiesList -->    
-## Elenco delle proprietà    
-<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.    
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
-	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni Paesi, è gestita dal governo locale.      
-	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
-	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
-	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
-- `alternateName[string]`: Un nome alternativo per questa voce  - `apState[string]`: Enum:'up, down'. Indica se il punto di accesso sta funzionando (valore: up), oppure se non funziona o è spento (valore: down). Enum:'up, down'  . Model: [http://schema.org/Text](http://schema.org/Text)- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: Sensore: Dispositivo che rileva e risponde a eventi o cambiamenti nell'ambiente fisico, come luce, movimento o variazioni di temperatura. https://w3id.org/saref#Sensor. Attuatore: Dispositivo responsabile del movimento o del controllo di un meccanismo o di un sistema. https://w3id.org/saref#Actuator. Misuratore : Dispositivo costruito per rilevare con precisione e visualizzare una quantità in una forma leggibile da un essere umano. Parzialmente definito da SAREF. HVAC : Dispositivo di riscaldamento, ventilazione e condizionamento dell'aria (HVAC) che fornisce il comfort ambientale interno. https://w3id.org/saref#HVAC. Rete : Dispositivo utilizzato per collegare altri dispositivi in una rete, come hub, switch o router in una rete LAN o Sensor. (https://w3id.org/saref#Network. Multimedia : Dispositivo progettato per visualizzare, memorizzare, registrare o riprodurre contenuti multimediali come audio, immagini, animazioni, video. Enum:'attuatore, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. La categoria grezza sarà deprecata. Utilizzare invece deviceCategory per evitare conflitti con altri aqttributi denominati categoria.  . Model: [https://schema.org/Text](https://schema.org/Text)- `clientsConnected[number]`: Numero di client o utenti collegati al punto di accesso  . Model: [https://schema.org/Number](https://schema.org/Number)- `controlledProperty[array]`: Qualsiasi cosa che possa essere percepita, misurata o controllata. Enum:Inquinamento atmosferico, Pressione atmosferica, Velocità media, Durata della batteria, Alimentazione della batteria, Conduttanza, Conduttività, Profondità, AlimentazioneAttività, Consumo di elettricità, Energia, Livello di riempimento, Cloro libero, Consumo di gas, Apertura del cancello, Direzione, Umidità, Luce, Posizione, Mungitura, Movimento, MovimentoAttività, rumore, occupazione, orp, pH, potenza, precipitazione, pressione, indice di rifrazione, salinità, fumo, umidità del suolo, radiazione solare, velocità, tds, temperatura, flusso di traffico, tss, torbidità, consumo d'acqua, flusso d'acqua, livello d'acqua, inquinamento idrico, condizioni meteorologiche, peso, direzione del vento, velocità del vento".  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateInstalled[date-time]`: Un timestamp che indica quando il dispositivo è stato installato (se richiede l'installazione)  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastReboot[date-time]`: Un timestamp che indica l'ultima volta che il dispositivo è stato riavviato con successo.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastValueReported[date-time]`: Un timestamp che indica l'ultima volta in cui il dispositivo ha comunicato con successo i dati al cloud.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `deviceCategory[array]`: Sensore: Dispositivo che rileva e risponde a eventi o cambiamenti nell'ambiente fisico, come luce, movimento o variazioni di temperatura. https://w3id.org/saref#Sensor. Attuatore: Dispositivo responsabile del movimento o del controllo di un meccanismo o di un sistema. https://w3id.org/saref#Actuator. Misuratore : Dispositivo costruito per rilevare con precisione e visualizzare una quantità in una forma leggibile da un essere umano. Parzialmente definito da SAREF. HVAC : Dispositivo di riscaldamento, ventilazione e condizionamento dell'aria (HVAC) che fornisce il comfort ambientale interno. https://w3id.org/saref#HVAC. Rete : Dispositivo utilizzato per collegare altri dispositivi in una rete, come hub, switch o router in una rete LAN o Sensor. (https://w3id.org/saref#Network. Multimedia : Dispositivo progettato per visualizzare, memorizzare, registrare o riprodurre contenuti multimediali come audio, immagini, animazioni, video. Enum:'attuatore, beacon, endgun, HVAC, implement, irrSection, irrSystem, meter, multimedia, network, sensor'. La categoria grezza sarà deprecata. Utilizzare invece deviceCategory per evitare conflitti con altri aqttributi denominati categoria.  . Model: [https://schema.org/Text](https://schema.org/Text)- `email[idn-email]`: Indirizzo e-mail del proprietario  - `firmwareVersion[string]`: La versione del firmware di questo dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `hardwareVersion[string]`: La versione hardware del dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificatore univoco dell'entità  - `ipAddress[string]`: L'indirizzo IP del dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `macAddress[string]`: L'indirizzo MAC del dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `modelName[string]`: Nome del modello del dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Il nome di questo elemento  - `osVersion[string]`: La versione del dispositivo del sistema operativo host  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `refPointOfInterest[*]`: Il punto di interesse in cui si trova il punto di accesso e che fornisce il servizio  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `serialNumber[string]`: Il numero di serie assegnato dal produttore  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `service[array]`: Questo attributo viene utilizzato per assegnare il punto di accesso a uno o più servizi comunali che ricevono il servizio wireless. Ad esempio: Biblioteca, Musei, Servizi sociali, Sport  . Model: [https://schema.org/Text](https://schema.org/Text)- `softwareVersion[string]`: La versione del software di questo dispositivo  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `ssid[array]`: Elenco dei nomi degli SSID (service set identifier) generati dal punto di accesso. Un punto d'accesso può generare uno o più SSID.  . Model: [https://schema.org/Text](https://schema.org/Text)- `supportedProtocol[array]`: Protocolli o reti supportati  . Model: [3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket](3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket)- `timeInstant[date-time]`: Timestamp del payload . Possono esistere ambienti di produzione in cui il tipo di attributo è uguale alla stringa `ISO8601`. In tal caso, deve essere considerato come un sinonimo di `DateTime`. Questo attributo viene mantenuto per la compatibilità con le vecchie implementazioni di riferimento FIWARE.  . Model: [https://schema.org/Datetime](https://schema.org/Datetime)- `type[string]`: Tipo di entità NGSI. Deve essere AccessPoint  <!-- /30-PropertiesList -->    
+## 속성 목록    
+<sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.    
+- `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역에 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.      
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호입니다. 예: 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
+	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
+	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호      
+- `alternateName[string]`: 이 항목의 대체 이름  - `apState[string]`: 열거형:'위, 아래'. 액세스 포인트가 작동 중인지(값: up), 아니면 작동하지 않거나 종료되었는지(값: down)를 나타냅니다. Enum:'up, down'  . Model: [http://schema.org/Text](http://schema.org/Text)- `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: 센서: 빛, 동작, 온도 변화 등 물리적 환경의 이벤트나 변화를 감지하고 이에 반응하는 장치 https://w3id.org/saref#Sensor. 액추에이터 : 메커니즘이나 시스템을 움직이거나 제어하는 역할을 하는 장치 https://w3id.org/saref#Actuator. 계량기 : 사람이 읽을 수 있는 형태로 수량을 정확하게 감지하고 표시하도록 제작된 장치. SAREF에서 부분적으로 정의. HVAC: 실내 환경의 쾌적함을 제공하는 난방, 환기 및 에어컨(HVAC) 장치. https://w3id.org/saref#HVAC. 네트워크: LAN 또는 센서 네트워크의 허브, 스위치 또는 라우터와 같이 네트워크에서 다른 장치를 연결하는 데 사용되는 장치. (https://w3id.org/saref#Network. 멀티미디어 : 오디오, 이미지, 애니메이션, 비디오와 같은 멀티미디어 콘텐츠를 표시, 저장, 녹화 또는 재생하도록 설계된 장치. 열거형: '액추에이터, 비콘, 엔드건, HVAC, 구현, irrSection, irrSystem, 미터, 멀티미디어, 네트워크, 센서'. 원시 카테고리는 더 이상 사용되지 않습니다. 카테고리라는 이름의 다른 어트리뷰트와의 충돌을 피하기 위해 대신 deviceCategory를 사용하십시오.  . Model: [https://schema.org/Text](https://schema.org/Text)- `clientsConnected[number]`: 액세스 포인트에 연결된 클라이언트 또는 사용자 수  . Model: [https://schema.org/Number](https://schema.org/Number)- `controlledProperty[array]`: 감지, 측정 또는 제어할 수 있는 모든 항목입니다. Enum:'공기오염, 대기압력, 평균속도, 배터리수명, 배터리수급, cdom, 컨덕턴스, 전도도, 깊이, 먹는활동, 전기소비량, 에너지, 충전량레벨, 무료염소, 가스소비량, 게이트개방, 방향, 습도, 빛, 위치, 착유, 동작, 이동활동, 소음레벨, 점유, orp, pH, 전력, 강수량, 압력, 굴절지수, 염분, 연기, 토양수분, 태양복사, 속도, tds, 온도, 교통흐름, tss, 탁도, 물소비량, 물흐름, 물레벨, 물오염, 날씨조건, 무게, 바람방향, 바람속도'  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateInstalled[date-time]`: 장치를 설치한 시점을 나타내는 타임스탬프(설치가 필요한 경우)  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastReboot[date-time]`: 장치가 성공적으로 재부팅된 마지막 시간을 나타내는 타임스탬프입니다.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastValueReported[date-time]`: 디바이스가 클라우드에 데이터를 성공적으로 보고한 마지막 시간을 나타내는 타임스탬프입니다.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `deviceCategory[array]`: 센서: 빛, 동작, 온도 변화 등 물리적 환경의 이벤트나 변화를 감지하고 이에 반응하는 장치 https://w3id.org/saref#Sensor. 액추에이터 : 메커니즘이나 시스템을 움직이거나 제어하는 역할을 하는 장치 https://w3id.org/saref#Actuator. 계량기 : 사람이 읽을 수 있는 형태로 수량을 정확하게 감지하고 표시하도록 제작된 장치. SAREF에서 부분적으로 정의. HVAC: 실내 환경의 쾌적함을 제공하는 난방, 환기 및 에어컨(HVAC) 장치. https://w3id.org/saref#HVAC. 네트워크: LAN 또는 센서 네트워크의 허브, 스위치 또는 라우터와 같이 네트워크에서 다른 장치를 연결하는 데 사용되는 장치. (https://w3id.org/saref#Network. 멀티미디어 : 오디오, 이미지, 애니메이션, 비디오와 같은 멀티미디어 콘텐츠를 표시, 저장, 녹화 또는 재생하도록 설계된 장치. 열거형: '액추에이터, 비콘, 엔드건, HVAC, 구현, irrSection, irrSystem, 미터, 멀티미디어, 네트워크, 센서'. 원시 카테고리는 더 이상 사용되지 않습니다. 카테고리라는 이름의 다른 어트리뷰트와의 충돌을 피하기 위해 대신 deviceCategory를 사용하십시오.  . Model: [https://schema.org/Text](https://schema.org/Text)- `email[idn-email]`: 소유자의 이메일 주소  - `firmwareVersion[string]`: 이 장치의 펌웨어 버전  . Model: [https://schema.org/Text](https://schema.org/Text)- `hardwareVersion[string]`: 이 장치의 하드웨어 버전  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 엔티티의 고유 식별자  - `ipAddress[string]`: 디바이스의 IP 주소  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `macAddress[string]`: 장치의 MAC 주소  . Model: [https://schema.org/Text](https://schema.org/Text)- `modelName[string]`: 디바이스 모델명  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: 이 항목의 이름  - `osVersion[string]`: 호스트 운영 체제 장치의 버전  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `refPointOfInterest[*]`: 액세스 포인트가 위치하고 서비스를 제공하는 관심 지점입니다.  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `serialNumber[string]`: 제조업체에서 부여한 일련 번호  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `service[array]`: 이 속성은 무선 서비스를 수신하는 하나 또는 여러 지자체 서비스 부서에 액세스 포인트를 할당하는 데 사용됩니다. 예 도서관, 박물관, 사회 서비스, 스포츠  . Model: [https://schema.org/Text](https://schema.org/Text)- `softwareVersion[string]`: 이 장치의 소프트웨어 버전  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `ssid[array]`: 액세스 포인트가 생성하는 SSID(서비스 세트 식별자)의 이름 목록입니다. 하나의 액세스 포인트가 하나 또는 여러 개의 SSID를 생성할 수 있습니다.  . Model: [https://schema.org/Text](https://schema.org/Text)- `supportedProtocol[array]`: 지원되는 프로토콜 또는 네트워크  . Model: [3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket](3g, bluetooth, bluetooth LE, cat-m, coap, ec-gsm-iot, gprs, http, lwm2m, lora, lte-m, mqtt, nb-iot, onem2m, sigfox, ul20, websocket)- `timeInstant[date-time]`: 페이로드의 타임스탬프입니다. 프로덕션 환경에서는 속성 유형이 `ISO8601` 문자열과 같을 수 있습니다. 이 경우 `DateTime`의 동의어로 간주해야 합니다. 이 속성은 이전 FIWARE 참조 구현과의 하위 호환성을 위해 유지됩니다.  . Model: [https://schema.org/Datetime](https://schema.org/Datetime)- `type[string]`: NGSI 엔티티 유형. AccessPoint여야 합니다.  <!-- /30-PropertiesList -->    
 <!-- 35-RequiredProperties -->    
-Proprietà richieste    
+필수 속성    
 - `id`  - `name`  - `type`  <!-- /35-RequiredProperties -->    
 <!-- 40-RequiredProperties -->    
-Il punto di accesso può fornire una rete wireless in un edificio o in un luogo (piazza, strada, spiaggia, giardino...) modellato con un tipo di entità separata [WifiPointOfInterest](../../WifiPointOfInterest/). Questo modello di dati è stato sviluppato in collaborazione con il [Comune di Valencia] (https://www.valencia.es).    
+액세스 포인트는 건물 또는 장소(광장, 거리, 해변, 정원 등)에서 무선 네트워크를 제공할 수 있으며, 별도의 엔티티 유형 [WifiPointOfInterest](../../WifiPointOfInterest/)로 모델링됩니다. 이 데이터 모델은 [발렌시아 시청](https://www.valencia.es)과 협력하여 개발되었습니다.    
 <!-- /40-RequiredProperties -->    
 <!-- 50-DataModelHeader -->    
-## Modello di dati descrizione delle proprietà    
-Ordinati in ordine alfabetico (clicca per i dettagli)    
+## 속성에 대한 데이터 모델 설명    
+알파벳순으로 정렬(자세한 내용을 보려면 클릭)    
 <!-- /50-DataModelHeader -->    
 <!-- 60-ModelYaml -->    
 <details><summary><strong>full yaml details</strong></summary>      
@@ -632,9 +633,9 @@ AccessPoint:
 <!-- 70-MiddleNotes -->    
 <!-- /70-MiddleNotes -->    
 <!-- 80-Examples -->    
-## Esempi di payload    
-#### AccessPoint NGSI-v2 Valori chiave Esempio    
-Ecco un esempio di AccessPoint in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.    
+## 페이로드 예시    
+#### AccessPoint NGSI-v2 키-값 예제    
+다음은 키-값으로 JSON-LD 형식의 액세스 포인트의 예입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -685,8 +686,8 @@ AccessPoint:
 }  
 ```  
 </details>    
-#### AccessPoint NGSI-v2 normalizzato Esempio    
-Ecco un esempio di AccessPoint in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.    
+#### AccessPoint NGSI-v2 정규화 예제    
+다음은 정규화된 JSON-LD 형식의 액세스 포인트의 예입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -815,8 +816,8 @@ AccessPoint:
 }  
 ```  
 </details>    
-#### AccessPoint NGSI-LD valori chiave Esempio    
-Ecco un esempio di AccessPoint in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.    
+#### AccessPoint NGSI-LD 키-값 예제    
+다음은 키-값으로 JSON-LD 형식의 액세스 포인트의 예입니다. 이는 `옵션=키값`을 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -870,8 +871,8 @@ AccessPoint:
 }  
 ```  
 </details>    
-#### AccessPoint NGSI-LD normalizzato Esempio    
-Ecco un esempio di AccessPoint in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.    
+#### AccessPoint NGSI-LD 정규화 예제    
+다음은 정규화된 JSON-LD 형식의 액세스 포인트의 예입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -1010,7 +1011,7 @@ AccessPoint:
 <!-- 90-FooterNotes -->    
 <!-- /90-FooterNotes -->    
 <!-- 95-Units -->    
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.    
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.    
 <!-- /95-Units -->    
 <!-- 97-LastFooter -->    
 ---    

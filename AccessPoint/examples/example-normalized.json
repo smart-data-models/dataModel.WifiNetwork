@@ -1,51 +1,62 @@
 {
   "id": "ap_542",
   "type": "AccessPoint",
+  "email": {
+    "type": "Text", 
+    "value": "asistencia_tecnica_wifi@valencia.es"
+  },
   "address": {
-    "type": "Text",  
-    "value": "Avda. Plata, 26. Valencia"
+    "type": "StructuredValue",
+    "value": {
+      "addressLocality": "Valencia",
+      "streetAddress": "Avda. Plata, 26"
+    }
   },
   "apState": {
-    "type": "Text",  
+    "type": "Text",
     "value": "up"
   },
   "clientsConnected": {
-    "type": "Number",    
+    "type": "Number",
     "value": 125
   },
   "name": {
-    "type": "Text",    
+    "type": "Text",
     "value": "Bomberos_ParqueCentral_Planta_1"
   },
   "location": {
     "type": "geo:json",
     "value": {
       "type": "Point",
-      "coordinates": [-0.367589, 39.454197]
+      "coordinates": [
+        -0.367589,
+        39.454197
+      ]
     }
   },
   "ssid": {
-    "type": "Array",
-    "value": ["AVC", "wifivalencia"]
+    "type": "StructuredValue",
+    "value": [
+      "AVC",
+      "wifivalencia"
+    ]
   },
   "service": {
-    "type": "Array",
-    "value": ["Bomberos"]
+    "type": "StructuredValue",
+    "value": [
+      "Bomberos"
+    ]
   },
   "refPointOfInterest": {
-    "type": "Relationship",
-    "object": "poi_226"
+    "type": "Text",
+    "value": "poi_226"
   },
   "timeInstant": {
     "type": "DateTime",
     "value": "2020-09-22T09:30:03.00Z"
   },
-  "contactPoint": {
-    "type": "Text",  
-    "value": "asistencia_tecnica_wifi@valencia.es"
-  },
   "dataProvider": {
-    "type": "Text",  
+    "type": "Text",
     "value": "Airwave"
   },
   "dateInstalled": {
@@ -61,51 +72,49 @@
     "value": "2020-09-22T09:30:03.00Z"
   },
   "description": {
-    "type": "Text",  
+    "type": "Text",
     "value": "Situado en el Parque Central de Bomberos, planta 1"
   },
   "firmwareVersion": {
-    "type": "Text",  
+    "type": "Text",
     "value": "7.2.584.0"
   },
   "hardwareVersion": {
-    "type": "Text",  
+    "type": "Text",
     "value": ""
   },
   "ipAddress": {
-    "type": "Text",  
+    "type": "Text",
     "value": "192.14.56.78"
   },
   "macAddress": {
-    "type": "Text",  
+    "type": "Text",
     "value": "00:2E:89:25:78:05"
   },
   "modelName": {
-    "type": "Text",   
+    "type": "Text",
     "value": "Aironet 1000 LWAPP"
   },
   "osVersion": {
-    "type": "Text",   
+    "type": "Text",
     "value": ""
   },
   "owner": {
-    "type": "Text",
-    "value": "Ayuntamiento_de_Valencia"
-  },
-  "provider": {
-    "type": "Text",   
-    "value": "Cisco"
+    "type": "StructuredValue",
+    "value": [
+      "Ayuntamiento_de_Valencia"
+    ]
   },
   "serialNumber": {
-    "type": "Text",   
+    "type": "Text",
     "value": "KWC33301C44"
   },
   "softwareVersion": {
-    "type": "Text",   
+    "type": "Text",
     "value": ""
   },
   "source": {
-    "type": "Text",   
+    "type": "Text",
     "value": "Cisco"
-  }  
+  }
 }

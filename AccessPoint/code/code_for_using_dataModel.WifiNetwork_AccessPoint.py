@@ -24,33 +24,38 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "AccessPoint"
 subject = "dataModel.WifiNetwork"
-email = "{'type': 'Property', 'value': 'asistencia_tecnica_wifi@valencia.es'}"
-attribute = "email"
-value = email
-# The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
-print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
-
-apState = "{'type': 'Property', 'value': 'up'}"
+apState = "up"
 attribute = "apState"
 value = apState
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-clientsConnected = {'type': 'Property', 'value': 125}
+clientsConnected = 258
 attribute = "clientsConnected"
 value = clientsConnected
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-dateInstalled = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '2019-01-01T00:00:00.00Z'}}"
+dateInstalled = "2019-01-01T00:00:00.00Z"
 attribute = "dateInstalled"
 value = dateInstalled
+# The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
+print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
+
+dateLastReboot = "2020-08-14T12:43:39.00Z"
+attribute = "dateLastReboot"
+value = dateLastReboot
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 

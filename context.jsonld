@@ -11,14 +11,14 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "category": "https://smartdatamodels.org/dataModel.WifiNetwork/category",
         "clientsConnected": "https://smartdatamodels.org/dataModel.WifiNetwork/clientsConnected",
         "controlledProperty": "https://smartdatamodels.org/dataModel.WifiNetwork/controlledProperty",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -34,7 +34,7 @@
         "hardwareVersion": "https://smartdatamodels.org/dataModel.WifiNetwork/hardwareVersion",
         "id": "@id",
         "ipAddress": "https://smartdatamodels.org/dataModel.WifiNetwork/ipAddress",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "macAddress": "https://smartdatamodels.org/dataModel.WifiNetwork/macAddress",
         "modelName": "https://smartdatamodels.org/dataModel.WifiNetwork/modelName",
         "name": "https://smartdatamodels.org/name",

@@ -1,10 +1,10 @@
 /* (Beta) Export of data model AccessPoint of the subject dataModel.WifiNetwork for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE apState_type AS ENUM ('up', 'down');
+CREATE TYPE AccessPoint_apState_type AS ENUM ('up', 'down');
 CREATE TYPE AccessPoint_type AS ENUM ('AccessPoint');
 CREATE TABLE AccessPoint (
   "address" JSON,
   "alternateName" TEXT,
-  "apState" apState_type,
+  "apState" AccessPoint_apState_type,
   "areaServed" TEXT,
   "category" JSON,
   "clientsConnected" NUMERIC,
